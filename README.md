@@ -113,4 +113,4 @@ Having created the user stories so that I knew who I was designing my website fo
 * [Balsamiq](https://balsamiq.com/) used to create my wireframes.
 * Jinja - templating language for some of my Python code.
 * [jQuery](http://code.jquery.com/)
-* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars
+* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars and register form template.

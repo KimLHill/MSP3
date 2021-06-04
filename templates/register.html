@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h3 class="center-align">Register</h3>
+
+  <div class="row">
+    <form class="col s12 m8 offset-m2 grey darken-2" method="POST" action="{{ url_for('register') }}">
+      <!-- Card panel template from Materialize-->
+      <div class="card-panel">
+        <!-- Username template from Materialize-->
+        <div class="row">
+          <div class="input-field col s12">
+            <!-- User icon from Font Awesome-->
+            <i class="fas fa-user-plus prefix orange-text text-accent-3"></i>
+            <input id="username" name="username" type="text" class="validate">
+            <label for="username">Username</label>
+          </div>
+        </div>
+        <!-- Password template from Materialize-->
+        <div class="row">
+          <div class="input-field col s12">
+            <!-- Lock icon from Font Awesome-->
+            <i class="fas fa-user-lock prefix orange-text text-accent-3"></i>
+            <input id="password" name="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <!-- Button template from Materialize-->
+        <div class="row">
+          <button type="submit" class="col s12 btn-large orange accent-3 text-shadow">
+            Register <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+{% endblock %}
