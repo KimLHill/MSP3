@@ -112,3 +112,5 @@ Having created the user stories so that I knew who I was designing my website fo
 * [Coolors](https://coolors.co/616163-17bebb-fafaff-db995a-ff9f1c) to create a professional looking colour palette for my website.
 * [Balsamiq](https://balsamiq.com/) used to create my wireframes.
 * Jinja - templating language for some of my Python code.
+* [jQuery](http://code.jquery.com/)
+* [Materialize](https://materializecss.com/getting-started.html)
