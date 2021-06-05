@@ -1,26 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!-- Using Jinja templating language to loop through each item within the recipes collection-->
-    {% for recipe in recipes %}
-        {{ recipe.recipe_name }}<br>
-        {{ recipe.category_name }}<br>
-        {{ recipe.recipe_description }}<br>
-    {% endfor %}
-
+    <!-- Accordian template from Materialize -->
     <ul class="collapsible">
+        {% for recipe in recipes %}
         <li>
-          <div class="collapsible-header white-text orange accent-3 text-shadow"><i class="material-icons">filter_drama</i>First</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-header white-text orange darken-4 text-shadow">
+                <i class="material-icons"></i>
+                <span class="recipe">
+                  {{ recipe.recipe_name }}
+                </span> : {{ recipe.recipe_description }}
+                {% if recipe.is_easy == "on" %}
+                    <!-- Icon from Font Awesome -->
+                    <!-- Tool tip template from Materialize -->
+                    <i class="fas fa-utensils tooltipped"
+                        data-position="right" data-tooltip="Quick & easy recipe"></i>
+                {% endif %}
+            </div>
+            <div class="collapsible-body">
+                <strong>{{ recipe.category_name }}</strong>
+            </div>
         </li>
-        <li>
-          <div class="collapsible-header white-text orange accent-3 text-shadow"><i class="material-icons"></i>Second</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header white-text orange accent-3 text-shadow"><i class="material-icons"></i>Third</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-      </ul>
+        {% endfor %}
+    </ul>
 
 {% endblock %}

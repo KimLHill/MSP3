@@ -17,3 +17,8 @@
 #sign-up-link {
     font-weight: bold;
 }
+
+/* Bold text for recipe name on accordian */
+.recipe {
+    font-weight: bold;
+}
