@@ -2,3 +2,18 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* flash messages custom styling */
+.flashes h4{
+    line-height: 2;
+    color: #fafaff;
+}
+
+/* Bold text for login link on register page */
+#log-in-link {
+    font-weight: bold;
+}
+
+/* Bold text for register link on login page */
+#sign-up-link {
+    font-weight: bold;
+}

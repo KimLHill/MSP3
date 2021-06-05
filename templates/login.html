@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <h3 class="center-align">Register</h3>
+  <h3 class="center-align">Log in</h3>
 
   <div class="row">
-    <form class="col s12 m8 offset-m2 grey darken-2" method="POST" action="{{ url_for('register') }}">
+    <form class="col s12 m8 offset-m2 grey darken-2" method="POST" action="{{ url_for('login') }}">
       <!-- Card panel template from Materialize-->
       <div class="card-panel">
         <!-- Username template from Materialize-->
         <div class="row">
           <div class="input-field col s12">
             <!-- User icon from Font Awesome-->
-            <i class="fas fa-user-plus prefix orange-text text-accent-3"></i>
+            <i class="fas fa-user-cog prefix orange-text text-accent-3"></i>
             <!-- Require a username between 5-12 characters with a-z A-Z or 0-9 -->
             <input id="username" name="username" type="text" minlength="5"
               maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
@@ -32,21 +32,21 @@
         <!-- Button template from Materialize-->
         <div class="row">
           <button type="submit" class="col s12 btn-large orange accent-3 text-shadow">
-            Register <i class="fas fa-sign-in-alt"></i>
+            Log in <i class="fas fa-sign-in-alt"></i>
           </button>
         </div>
       </div>
     </form>
   </div>
 
-  <!-- if user is a returning user, redirect them to login page -->
-  <div class="row">
-    <div class="col s12">
-      <p class="center-align">
-        Already registered?
-        <a href="{{ url_for('login') }}" class="orange-text text-accent-3" id="log-in-link">Log in</a>
-      </p>
-    </div>
+<!-- if user is new, redirect them to register page -->
+<div class="row">
+  <div class="col s12">
+    <p class="center-align">
+      Are you a new user?
+      <a href="{{ url_for('register') }}" class="orange-text text-accent-3" id="sign-up-link">Register account</a>
+    </p>
   </div>
+</div>
 
 {% endblock %}
