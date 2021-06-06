@@ -3,6 +3,7 @@
 
     <!-- Accordian template from Materialize -->
     <ul class="collapsible">
+        <!-- Get recipe info from database and put into accordian-->
         {% for recipe in recipes %}
         <li>
             <div class="collapsible-header white-text orange darken-4 text-shadow">
@@ -18,7 +19,19 @@
                 {% endif %}
             </div>
             <div class="collapsible-body">
-                <strong>{{ recipe.category_name }}</strong>
+                <h5>{{ recipe.category_name }}</h5><br>
+                <p>
+                    <span class="recipe">
+                        {{ recipe.title_ingredients }}
+                    </span>
+                    {{ recipe.recipe_ingredients }}<br><br>
+                    <span class="recipe">
+                        {{ recipe.title_method }}
+                    </span>
+                    {{ recipe.recipe_method}}<br><br>
+                    {{ recipe.recipe_calories }}{{ recipe.recipe_protein }}
+                    {{ recipe.recipe_carbohydrate }}{{ recipe.recipe_fat }}
+                </p>
             </div>
         </li>
         {% endfor %}
