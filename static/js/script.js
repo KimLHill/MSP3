@@ -6,4 +6,6 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     // Initialize tooltip functionality
     $('.tooltipped').tooltip();
+    // Initialize add recipe category selection functionality
+    $('select').formSelect();
   });
