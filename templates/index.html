@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="center-align header orange-text text-darken-4">
+    <h2>Whey Too Tasty!</h2>
+    <p>
+      Here you will find lots of tasty, 
+      protein-packed recipes to fuel your healthy lifestyle.
+    </p>
+    <!-- Carousel template from Materialize -->
+    <div class="carousel">
+      <a class="carousel-item" href="#one!">
+        <img src="{{url_for('static', filename='/images/' + 'whey_protein_sachets.png')}}"></a>
+      <a class="carousel-item" href="#two!">
+        <img src="{{url_for('static', filename='/images/' + 'protein_shake.png')}}"></a>
+      <a class="carousel-item" href="#three!">
+        <img src="{{url_for('static', filename='/images/' + 'protein_porridge.png')}}"></a>
+      <a class="carousel-item" href="#four!">
+        <img src="{{url_for('static', filename='/images/' + 'female.png')}}"></a>
+      <a class="carousel-item" href="#five!">
+        <img src="{{url_for('static', filename='/images/' + 'open_sachet.png')}}"></a>
+    </div>
+    <div>
+      <!-- Button linked to whey protein shop -->
+      <!-- Button template from Materialize -->
+      <a class="waves-effect waves-light btn orange accent-3 center-align" href="https://www.wheybox.com/shop/" target="_blank">Get your whey protein</a>
+    </div>
+  </section>
+
+{% endblock %}

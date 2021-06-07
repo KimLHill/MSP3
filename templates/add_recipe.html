@@ -39,6 +39,16 @@
                     <label for="recipe_description">Recipe description</label>
                 </div>
             </div>
+            <!-- Recipe ingredients field -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <!-- Icon from Font Awesome -->
+                    <i class="fas fa-shopping-cart prefix orange-text text-accent-3"></i>
+                    <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
+                    maxlength="200"class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_ingredients">Recipe ingredients</label>
+                </div>
+            </div>
             <!-- Is easy toggle switch -->
             <div class="row">
                 <!-- Switch template from Materialize -->
@@ -58,9 +68,6 @@
             <div class="row">
                 <div class="col s12 center-align">
                     <!-- Button template from Materialize -->
-                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
-                        Add Task <i class="fas fa-plus-square right"></i>
-                    </button>
                     <button class="btn waves-effect waves-light orange accent-3 center-align" type="submit">Add recipe
                         <i class="fas fa-plus-square right"></i>
                     </button>

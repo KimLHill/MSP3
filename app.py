@@ -18,15 +18,22 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/")
-@app.route("/get_recipes")
+# Routes user to index page as default
+@app.route('/')
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+
+# Routing for the recipes page
+@app.route("/recipes")
 # find recipes from MongoDB database and render to recipes template
-def get_recipes():
+def recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
 
 
-
+# Routing for the register page
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -55,6 +62,7 @@ def register():
     return render_template("register.html")
 
 
+# Routing for the login page
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -85,6 +93,7 @@ def login():
     return render_template("login.html")
 
 
+# Routing for the user profile page
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # get the session user's username from the database
@@ -99,6 +108,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+# Routing for the logout
 @app.route("/logout")
 def logout():
     # remove user from session cookies
@@ -108,6 +118,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Routing for the add recipe page
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
