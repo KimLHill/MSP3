@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <!-- Recipe header -->
+    <div class="section center-align">
+        <h3>Whey Too Tasty recipes</h3>
+            <p>
+            Search the recipes below to find your perfect
+            meal, snack or drink.
+            </p>
+    </div>
+
     <!-- Accordian template from Materialize -->
     <ul class="collapsible">
         <!-- Get recipe info from database and put into accordian-->
@@ -19,18 +28,23 @@
                 {% endif %}
             </div>
             <div class="collapsible-body">
+                <!-- Add recipe details from database from add recipe form-->
                 <h5>{{ recipe.category_name }}</h5><br>
                 <p>
-                    <span class="recipe">
-                        {{ recipe.title_ingredients }}
-                    </span>
+                    <!-- Make ingredients title bold -->
+                    <b>Ingredients:</b>
+                    <!-- Add ingredients -->
                     {{ recipe.recipe_ingredients }}<br><br>
-                    <span class="recipe">
-                        {{ recipe.title_method }}
-                    </span>
+                    <!-- Make method title bold -->
+                    <b>Method:</b>
+                    <!-- Add method -->
                     {{ recipe.recipe_method}}<br><br>
-                    {{ recipe.recipe_calories }}{{ recipe.recipe_protein }}
-                    {{ recipe.recipe_carbohydrate }}{{ recipe.recipe_fat }}<br><br>
+                    <!-- Add kcal and macros -->
+                    Calories: {{ recipe.recipe_calories }}<br>
+                    Protein: {{ recipe.recipe_protein }}<br>
+                    Carbohydrate: {{ recipe.recipe_carbohydrate }}<br>
+                    Fat: {{ recipe.recipe_fat }}<br><br>
+                    <!-- Add creator details from session cookie -->
                     <em>by: {{ recipe.created_by }}</em>
                 </p>
             </div>

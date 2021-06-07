@@ -129,6 +129,14 @@ def add_recipe():
             "recipe_name": request.form.get("recipe_name"),
             "recipe_description": request.form.get("recipe_description"),
             "is_easy": is_easy,
+            "title_ingredients": request.form.get("title_ingredients"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "title_method": request.form.get("title_method"),
+            "recipe_method": request.form.get("recipe_method"),
+            "recipe_calories": request.form.get("recipe_calories"),
+            "recipe_protein": request.form.get("recipe_protein"),
+            "recipe_carbohydrate": request.form.get("recipe_carbohydrate"),
+            "recipe_fat": request.form.get("recipe_fat"),
             "created_by": session["user"]
         }
         # insert into database
@@ -136,7 +144,7 @@ def add_recipe():
         # success message
         flash("Recipe successfully added")
         # return user to home page
-        return redirect(url_for("get_recipes"))
+        return redirect(url_for("recipes"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipe.html", categories=categories)

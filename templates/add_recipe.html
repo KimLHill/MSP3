@@ -5,7 +5,7 @@
 
     <!-- Form template from Materialize -->
     <div class="row card-panel grey lighten-5">
-        <form class="col s12 method="POST" action="{{ url_for('add_recipe')}}">
+        <form class="col s12" method="POST" action="{{ url_for('add_recipe')}}">
             <!-- Recipe category selection field -->
             <div class="row">
 				<div class="input-field col s12">
@@ -24,7 +24,7 @@
                 <div class="input-field col s12">
                     <!-- Icon from Font Awesome -->
                     <i class="fas fa-pencil-alt prefix orange-text text-accent-3"></i>
-                    <input id="recipe_name" name="recipe_name" minlength="5" maxlength="20"
+                    <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
                      type="text" class="validate" required>
                     <label for="recipe_name">Recipe name</label>
                 </div>
@@ -45,8 +45,46 @@
                     <!-- Icon from Font Awesome -->
                     <i class="fas fa-shopping-cart prefix orange-text text-accent-3"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
-                    maxlength="200"class="materialize-textarea validate" required></textarea>
+                    maxlength="400"class="materialize-textarea validate" required></textarea>
                     <label for="recipe_ingredients">Recipe ingredients</label>
+                </div>
+            </div>
+            <!-- Recipe method field -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <!-- Icon from Font Awesome -->
+                    <i class="fas fa-list-ol prefix orange-text text-accent-3"></i>
+                    <textarea id="recipe_method" name="recipe_method" minlength="5"
+                    maxlength="1000"class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_method">Recipe method</label>
+                </div>
+            </div>
+            <!-- Recipe calories field -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <textarea id="recipe_calories" name="recipe_calories" minlength="1"
+                    maxlength="25"class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_calories">Recipe calories</label>
+                </div>
+            <!-- Recipe protein field -->
+            <div class="input-field col s6">
+                    <textarea id="recipe_protein" name="recipe_protein" minlength="1"
+                    maxlength="3"class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_protein">Protein</label>
+                </div>
+            </div>
+            <!-- Recipe carbohydrates field -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <textarea id="recipe_carbohydrate" name="recipe_carbohydrate" minlength="1"
+                    maxlength="3"class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_carbohydrate">Carbohydrate</label>
+                </div>
+            <!-- Recipe fat field -->
+            <div class="input-field col s6">
+                    <textarea id="recipe_fat" name="recipe_fat" minlength="1"
+                    maxlength="3"class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_fat">Fat</label>
                 </div>
             </div>
             <!-- Is easy toggle switch -->
