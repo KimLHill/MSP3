@@ -8,4 +8,6 @@ $(document).ready(function(){
     $('.tooltipped').tooltip();
     // Initialize add recipe category selection functionality
     $('select').formSelect();
+    // Initialize carousel functionality
+    $('.carousel').carousel();
   });
