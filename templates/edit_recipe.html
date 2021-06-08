@@ -11,9 +11,14 @@
 				<div class="input-field col s12">
                     <i class="fas fa-folder-open prefix orange-text text-accent-3"></i>
 					<select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected>Choose Category</option>
+                        <option value="" disabled>Choose Category</option>
                         {% for category in categories %}
-                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            <!-- Add selected attribute if recipe category name is a match -->
+                            {% if category.category_name == recipe.category_name %}
+                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                            {% else %}
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% endif %}
                         {% endfor %}
                     </select>
 					<label for="category_name">Task Category</label>
@@ -25,7 +30,7 @@
                     <!-- Icon from Font Awesome -->
                     <i class="fas fa-pencil-alt prefix orange-text text-accent-3"></i>
                     <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
-                     type="text" class="validate" required>
+                     value="{{ recipe.recipe_name }}" type="text" class="validate" required>
                     <label for="recipe_name">Recipe name</label>
                 </div>
             </div>
@@ -33,9 +38,13 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- Icon from Font Awesome -->
+                    <!-- Get current recipe description from database-->
+                    <!-- Removed whitespace to sit nicely on line -->
                     <i class="fas fa-align-left prefix orange-text text-accent-3"></i>
                     <textarea id="recipe_description" name="recipe_description" minlength="5"
-                    maxlength="200"class="materialize-textarea validate" required></textarea>
+                    maxlength="200"class="materialize-textarea validate" required>
+                        {{- recipe.recipe_description -}}
+                    </textarea>
                     <label for="recipe_description">Recipe description</label>
                 </div>
             </div>
@@ -43,9 +52,13 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- Icon from Font Awesome -->
+                    <!-- Get current recipe ingredients from database-->
+                    <!-- Removed whitespace to sit nicely on line -->
                     <i class="fas fa-shopping-cart prefix orange-text text-accent-3"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
-                    maxlength="400"class="materialize-textarea validate" required></textarea>
+                    maxlength="400"class="materialize-textarea validate" required>
+                        {{- recipe.recipe_ingredients -}}
+                    </textarea>
                     <label for="recipe_ingredients">Recipe ingredients</label>
                 </div>
             </div>
@@ -53,37 +66,57 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- Icon from Font Awesome -->
+                    <!-- Get current recipe method from database-->
+                    <!-- Removed whitespace to sit nicely on line -->
                     <i class="fas fa-list-ol prefix orange-text text-accent-3"></i>
                     <textarea id="recipe_method" name="recipe_method" minlength="5"
-                    maxlength="1000"class="materialize-textarea validate" required></textarea>
+                    maxlength="1000"class="materialize-textarea validate" required>
+                        {{- recipe.recipe_method -}}
+                    </textarea>
                     <label for="recipe_method">Recipe method</label>
                 </div>
             </div>
             <!-- Recipe calories field -->
             <div class="row">
                 <div class="input-field col s6">
+                    <!-- Get current recipe method from database-->
+                    <!-- Removed whitespace to sit nicely on line -->
                     <textarea id="recipe_calories" name="recipe_calories" minlength="1"
-                    maxlength="25"class="materialize-textarea validate" required></textarea>
+                    maxlength="25"class="materialize-textarea validate" required>
+                        {{- recipe.recipe_calories -}}
+                    </textarea>
                     <label for="recipe_calories">Recipe calories</label>
                 </div>
             <!-- Recipe protein field -->
             <div class="input-field col s6">
+                    <!-- Get current recipe method from database-->
+                    <!-- Removed whitespace to sit nicely on line -->
                     <textarea id="recipe_protein" name="recipe_protein" minlength="1"
-                    maxlength="3"class="materialize-textarea validate" required></textarea>
+                    maxlength="3"class="materialize-textarea validate" required>
+                        {{- recipe.recipe_protein -}}
+                    </textarea>
                     <label for="recipe_protein">Protein</label>
                 </div>
             </div>
             <!-- Recipe carbohydrates field -->
             <div class="row">
                 <div class="input-field col s6">
+                    <!-- Get current recipe method from database-->
+                    <!-- Removed whitespace to sit nicely on line -->
                     <textarea id="recipe_carbohydrate" name="recipe_carbohydrate" minlength="1"
-                    maxlength="3"class="materialize-textarea validate" required></textarea>
+                    maxlength="3"class="materialize-textarea validate" required>
+                        {{- recipe.recipe_carbohydrate -}}
+                    </textarea>
                     <label for="recipe_carbohydrate">Carbohydrate</label>
                 </div>
             <!-- Recipe fat field -->
             <div class="input-field col s6">
+                    <!-- Get current recipe method from database-->
+                    <!-- Removed whitespace to sit nicely on line -->
                     <textarea id="recipe_fat" name="recipe_fat" minlength="1"
-                    maxlength="3"class="materialize-textarea validate" required></textarea>
+                    maxlength="3"class="materialize-textarea validate" required>
+                        {{- recipe.recipe_fat -}}
+                    </textarea>
                     <label for="recipe_fat">Fat</label>
                 </div>
             </div>
@@ -95,9 +128,14 @@
                         <!-- Icon from Font Awesome -->
                         <i class="fas fa-utensils prefix orange-text text-accent-3"></i>
                         <label for="is_easy">
-                          <input type="checkbox" id="is_easy" name="is_easy">
-                          <span class="lever"></span>
-                          Is easy
+                            <!-- Check to see if recipe was marked as easy -->
+                            {% if recipe.is_easy == "on" %}
+                                <input type="checkbox" id="is_easy" name="is_easy" checked>
+                            {% else %}
+                                <input type="checkbox" id="is_easy" name="is_easy">
+                            {% endif %}
+                            <span class="lever"></span>
+                            Is easy
                         </label>
                       </div>
                 </div>
@@ -105,6 +143,10 @@
             <!-- Submit form button -->
             <div class="row">
                 <div class="col s12 center-align">
+                    <!-- Button to cancel changes -->
+                    <a href="{{ url_for('recipes') }}" class="btn-small red text-shadow">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                    </a>
                     <!-- Button template from Materialize -->
                     <button class="btn waves-effect waves-light orange accent-3 center-align" type="submit">
                         Edit recipe
