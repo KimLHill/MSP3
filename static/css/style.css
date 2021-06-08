@@ -27,3 +27,14 @@
 .header {
     padding-bottom: 50px;
 }
+
+/* Added margin to edit and delete buttons */
+.btn-small {
+    margin:5px;
+}
+
+/* Styling recipe name header so text sits evenly with buttons */
+.collapsible-header .col span {
+    margin: 5px;
+    line-height: 42px;
+}

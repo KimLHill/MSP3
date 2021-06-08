@@ -16,16 +16,23 @@
         {% for recipe in recipes %}
         <li>
             <div class="collapsible-header white-text orange darken-4 text-shadow">
-                <i class="material-icons"></i>
-                <span class="recipe">
-                  {{ recipe.recipe_name }}
-                </span> : {{ recipe.recipe_description }}
-                {% if recipe.is_easy == "on" %}
+                <div class="col s3">
                     <!-- Icon from Font Awesome -->
-                    <!-- Tool tip template from Materialize -->
-                    <i class="fas fa-utensils tooltipped"
-                        data-position="right" data-tooltip="Quick & easy recipe"></i>
-                {% endif %}
+                    <i class="fas fa-caret-down"></i>
+                    <a href="" class="btn-small green accent-4">Done</a>
+                    <a href="" class="btn-small orange accent-3">Edit</a>
+                </div>
+                <div class="col s9">
+                    <span class="recipe">
+                        {{ recipe.recipe_name }}
+                      </span> : {{ recipe.recipe_description }}
+                      {% if recipe.is_easy == "on" %}
+                          <!-- Icon from Font Awesome -->
+                          <!-- Tool tip template from Materialize -->
+                          <i class="fas fa-utensils tooltipped"
+                              data-position="right" data-tooltip="Quick & easy recipe"></i>
+                      {% endif %}
+                </div>
             </div>
             <div class="collapsible-body">
                 <!-- Add recipe details from database from add recipe form-->
