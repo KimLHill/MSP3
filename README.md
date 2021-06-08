@@ -131,7 +131,8 @@ Having created the user stories so that I knew who I was designing my website fo
 5. **Surface Plane:**
     * When addressing the surface plane, I focused on the website branding and details like the colour, fonts and images. I kept in mind the question: What will be appeal to my users?
         * Images – promoting the whey protein powder the website owner sells and showing high-protein recipes to appeal to the website’s users.
-        * Colour scheme – I chose to use the colours of orange, grey and white as these are gender neutral colours that will appeal to people of all ages. They are also strong colours that will stand out from the potentially large number of colours in recipe photos.
+        * Colour scheme – I chose to use the colours of orange and white as these are gender neutral colours that will appeal to people of all ages. They are also strong colours that will stand out from the potentially large number of colours in recipe photos. I used Coolors to create a colour palette from orange and white.
+        ![Whey Too Tasty palette](https://user-images.githubusercontent.com/74603013/121207474-37ebec00-c871-11eb-976c-dc9345ede2dd.png)
         * Icons – I chose to use font awesome icons across the pages where it could aid the user’s understanding and for greater visual appeal.
         * Logo – I chose to position the logo in the top left-hand corner of the website (within the navbar) as this is a convention of websites that users have to come to expect.
         * Call to action buttons - I chose colour the call-to-action buttons in bright colours to attract the user and make them more likely to click them.

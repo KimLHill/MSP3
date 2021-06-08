@@ -2,7 +2,7 @@
 {% block content %}
 
     <!-- Recipe header -->
-    <div class="section center-align">
+    <div class="section center-align recipe-header">
         <h3>Whey Too Tasty recipes</h3>
             <p>
             Search the recipes below to find your perfect
@@ -15,10 +15,10 @@
         <!-- Get recipe info from database and put into accordian-->
         {% for recipe in recipes %}
         <li>
-            <div class="collapsible-header white-text orange darken-4 text-shadow">
+            <div class="collapsible-header amber lighten-3">
                 <div class="col s3">
                     <!-- Icon from Font Awesome -->
-                    <i class="fas fa-caret-down"></i>
+                    <i class="fas fa-caret-down orange accent-4"></i>
                     <!-- Only allow user to edit their own recipes -->
                     {% if session.user|lower == recipe.created_by|lower %}
                     <!-- Edit and delete buttons -->
@@ -26,7 +26,7 @@
                         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small orange accent-3">Edit</a>
                     {% endif %}
                 </div>
-                <div class="col s9">
+                <div class="col s9 recipe-text-colour">
                     <span class="recipe">
                         {{ recipe.recipe_name }}
                       </span> : {{ recipe.recipe_description }}
@@ -38,7 +38,7 @@
                       {% endif %}
                 </div>
             </div>
-            <div class="collapsible-body">
+            <div class="collapsible-body recipe-text-colour">
                 <!-- Add recipe details from database from add recipe form-->
                 <h5>{{ recipe.category_name }}</h5><br>
                 <p>

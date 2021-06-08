@@ -37,6 +37,27 @@
 .collapsible-header .col span {
     margin: 5px;
     line-height: 42px;
+    color: #1f1300
+}
+
+/* Styling all h3 elements to match coolor palette */
+h3 {
+    color:#1f1300;
+}
+
+/* Styling accordian text to match coolor palette */
+.recipe-header {
+    color:#1f1300;
+}
+
+/* Styling to match coolor palette */
+.wheybox h4 {
+    color: #1f1300;
+}
+
+/* Styling recipe text to match coolor palette */
+.recipe-text-colour {
+    color: #1f1300
 }
 
 /* Sticky footer template from Materialize */
@@ -54,3 +75,5 @@ body {
   .wheybox {
       padding-bottom: 50px;
   }
+
+  
