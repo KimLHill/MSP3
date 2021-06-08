@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="orange-text text-accent-3 center-align">Add recipe</h3>
+    <h3 class="orange-text text-accent-3 center-align">Edit recipe</h3>
 
     <!-- Form template from Materialize -->
     <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="{{ url_for('add_recipe')}}">
+        <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
             <!-- Recipe category selection field -->
             <div class="row">
 				<div class="input-field col s12">
@@ -106,9 +106,10 @@
             <div class="row">
                 <div class="col s12 center-align">
                     <!-- Button template from Materialize -->
-                    <button class="btn waves-effect waves-light orange accent-3 center-align" type="submit">Add recipe
+                    <button class="btn waves-effect waves-light orange accent-3 center-align" type="submit">
+                        Edit recipe
                         <!-- Icon from Font Awesome -->
-                        <i class="fas fa-plus-square right"></i>
+                        <i class="fas fa-edit right"></i>
                     </button>
                 </div>
             </div>
