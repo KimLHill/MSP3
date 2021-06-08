@@ -19,9 +19,12 @@
                 <div class="col s3">
                     <!-- Icon from Font Awesome -->
                     <i class="fas fa-caret-down"></i>
+                    <!-- Only allow user to edit their own recipes -->
+                    {% if session.user|lower == recipe.created_by|lower %}
                     <!-- Edit and delete buttons -->
-                    <a href="" class="btn-small green accent-4">Done</a>
-                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small orange accent-3">Edit</a>
+                        <a href="" class="btn-small green accent-4">Done</a>
+                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small orange accent-3">Edit</a>
+                    {% endif %}
                 </div>
                 <div class="col s9">
                     <span class="recipe">
