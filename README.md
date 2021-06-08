@@ -89,7 +89,7 @@ My deployed project can be viewed live here.
 
 ### The 5 Planes of UX ###
 Having created the user stories so that I knew who I was designing my website for, I then followed the user centred design process to create a website that would answer the above user stories.
-1.	Strategy Plane:
+1.	**Strategy Plane:**
     * When addressing the strategy plane, I focused on who the website users were likely to be and the objectives the website needed to meet to attract these users. I kept in mind the question: Why is the Whey Too Tasty website so special?
         * Reason for the website’s existence – To serve the nutrition and fitness community allowing like-minded people to find, upload and share high-protein recipes.
         * Culture of the audience –Nutrition and fitness community wanting to increase their protein intake which may include:
@@ -102,15 +102,73 @@ Having created the user stories so that I knew who I was designing my website fo
     * I researched current recipe websites (specifically allrecipes (http://allrecipes.co.uk/) and BBC Good Food (https://www.bbcgoodfood.com/)) to gather information on what these websites offer their users; the pros and cons that I liked as a user of their website and to identify the features and information they provided. This gave me ideas of how to address my user’s needs but also how I could further improve my user’s experience to add value to the Whey Too Tasty website.
 
 
-2.	Scope Plane:
+2.	**Scope Plane:**
     * When addressing the scope plane, I focused on what features were to be included on the website and its key functionality to meet the user’s needs. I also needed to combine these with Javascript as per the requirements for my Code Institute MSP3. I kept in mind the question of: Why would a user want this?
-	    * Requirements: ability to find high-protein recipes, ability to create, upload, edit and delete high-protein recipes; ability to share high-protein recipes with others; ability to store recipes in my member account, ability for user’s to buy the website owner’s protein powder.
-        * Key features: an easy-to-use form to search for recipes that meet my needs, an simple process to join as a member, a simple process to log in to my member account, an easy-to-use form to create and upload my own recipes, an easy way of editing recipes, a simple method to share recipes with others, a simple way to buy the protein powder the website promotes.
+	    * Requirements: ability to find high-protein recipes, ability to create, upload, edit and delete high-protein recipes; ability to share high-protein recipes with others; ability for user’s to buy the website owner’s protein powder.
+        * Key features: an easy-to-use form to search for recipes that meet my needs, a simple process to join as a member, a simple process to log in to my member account, an easy-to-use form to create and upload my own recipes, an easy way of editing recipes, a simple method to share recipes with others, a simple way to buy the protein powder the website promotes.
+        * CRUD functions: To achieve the above requirements and key features I needed to implement the Create, Read, Update & Delete (CRUD) functions for my database. I decided to use them in the following ways:
+            1. Create: 
+                * Create a new user (register account)
+                * Create a new recipe 
+            2. Read:
+                * To search, find and read recipes in the database
+            3. Update:
+                * Update a recipe (edit recipe)
+            4. Delete: 
+                * Delete a recipe
+
+3. **Structure Plane:**
+    * When addressing the structure plane, I focused on the journey the website would take the users on. I kept in mind the question: What is an intuitive way to go navigate the content and features?
+        * How to get there? I knew that my website should include a navbar with tabs to enable users to easily navigate through the website content. There would also be buttons linked to specific parts of the website such as the ‘register’ form to allow users to quickly and easily access the main features.
+        * I wanted some of the website like the home page and recipes page to be open to all users, but for some pages like the add recipe page to be visible only to users who were logged in to their account in the website. I decided to have different tabs displaying, depending on whether or not a user was logged in. For example, a user who is already logged in doesn’t want to see ‘Register’ or ‘Login’ options, so instead can see ‘Logout’.
+        * How will they move through the website? – user who isn’t logged in. This user can see 4 pages: Home, Recipes, Login and Register. By using this order, the user first learns about the whey protein product the website owner wants to sell, the user can see recipes using encouraging them to use and therefore want to buy the protein powder. Finally, the user has the option of logging in or registering an account to access more website features.
+        * How will they move through the website? – user who is logged in. This user can see 5 navbar tabs: Home, Recipes, Profile, Add recipe and Logout. This user can access the home page for links to purchase their whey protein, see recipes using the protein powder & where they can edit or delete their own recipes, view their profile to easily navigate around the website, add their own recipes and logout of their account.
+
+4. **Skeleton Plane:**
+    * When addressing the skeleton plane, I focused on the keeping the layout design of the website familiar to the users by using a standard layout the users would be use to seeing. I kept in mind the question: What conventions will the user be familiar with?
+    * How to style the page? I knew that my website pages should be consistent in style and that they should use a standard page layout. I chose to use features the user would expect to see including: a navbar at the top of the page, a header title at the top of each page, a main body and a footer at the bottom of the page with social media links.
+
+5. **Surface Plane:**
+    * When addressing the surface plane, I focused on the website branding and details like the colour, fonts and images. I kept in mind the question: What will be appeal to my users?
+        * Images – promoting the whey protein powder the website owner sells and showing high-protein recipes to appeal to the website’s users.
+        * Colour scheme – I chose to use the colours of orange, grey and white as these are gender neutral colours that will appeal to people of all ages. They are also strong colours that will stand out from the potentially large number of colours in recipe photos.
+        * Icons – I chose to use font awesome icons across the pages where it could aid the user’s understanding and for greater visual appeal.
+        * Logo – I chose to position the logo in the top left-hand corner of the website (within the navbar) as this is a convention of websites that users have to come to expect.
+        * Call to action buttons - I chose colour the call-to-action buttons in bright colours to attract the user and make them more likely to click them.
+        * Carousel – I chose to have an image carousel on the home page to showcase several images that promote the website owner’s whey protein powder. The carousel is interactive to encourage the users to interact with the website. If they are clicking through photos and interacting with the website, this is likely to increase the amount of people who click through to buy the whey protein via the button.
+        * Accordion – I chose to present the recipes in a collapsible accordion. This allows the user to see the recipe name and a quick description. They can then click on the recipe they like to find the other information like ingredients and method, which they are encouraged to do with a dropdown arrow.
+
+
+### **Wireframes**
+Before I started coding my project, I created wireframes using Balsamiq. I created wireframes for mobile, tablet and desktop devices to decide the layout at different screen sizes. I also used the user stories to add more detail to the website to provide a better user experience. A pdf copy of my wireframes can be found under wireframes in the assets folder or accessed here 
+
+**Wireframes for mobile devices**
+
+
+**Wireframes for tablet devices**
+
+
+**Wireframes for desktop devices**
+
 
 ### Technologies Used ###
+* HTML5 used for the .html pages
+* CSS used to style the html pages.
+* Javascript used to make my website interactive.
+* [jQuery](https://api.jquery.com/) javascript library used for my javascript code denoted by $ prefix on script.js.
 * [Random Key Gen](https://randomkeygen.com/) to produce the secure passwords used in my project.
 * [Coolors](https://coolors.co/616163-17bebb-fafaff-db995a-ff9f1c) to create a professional looking colour palette for my website.
 * [Balsamiq](https://balsamiq.com/) used to create my wireframes.
-* Jinja - templating language for some of my Python code.
-* [jQuery](http://code.jquery.com/)
-* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, accordian collapsible, carousel, tooltip template and register form template.
+* Jinja - templating language for some of my Python code denoted by {% %}.
+* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, tooltip template and form templates.
+
+### Acknowledgements ###
+* My Code Institute mentor Seun Owonikoko whose feedback throughout the project influenced my website design, content and features.
+
+### Media ###
+The images used on my wireframes and website are from:
+* [Carousel one](https://www.instagram.com/p/CM2CaBOLJMi/?utm_source=ig_web_copy_link)
+* [Carousel two](https://www.instagram.com/p/B9Ytgb7nQ7Q/?utm_source=ig_web_copy_link)
+* [Carousel three](https://www.instagram.com/p/CKTfkGgAb-7/?utm_source=ig_web_copy_link)
+* [Carousel four](https://www.instagram.com/p/CN4jh4WARzo/?utm_source=ig_web_copy_link)
+* [Carousel five](https://www.instagram.com/p/ByuKPdcgCwY/?utm_source=ig_web_copy_link)

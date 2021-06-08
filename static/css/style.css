@@ -38,3 +38,15 @@
     margin: 5px;
     line-height: 42px;
 }
+
+/* Sticky footer template from Materialize */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      

@@ -32,7 +32,7 @@
                   <!-- options for logged in users -->
                   <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
                   <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                  <li><a href="{{ url_for('add_recipe') }}">New recipe</a></li>
+                  <li><a href="{{ url_for('add_recipe') }}">Add recipe</a></li>
                   <li><a href="{{ url_for('logout') }}">Log out</a></li>
                 {% else %}
                   <!-- makes home, login & register only options if not logged in-->
@@ -54,7 +54,7 @@
               <!-- options for logged in users -->
               <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
               <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-              <li><a href="{{ url_for('add_recipe') }}">New recipe</a></li>
+              <li><a href="{{ url_for('add_recipe') }}">Add recipe</a></li>
               <li><a href="{{ url_for('logout') }}">Log out</a></li>
             {% else %}
               <!-- makes home, login & register only options if not logged in--> 
