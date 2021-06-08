@@ -49,4 +49,8 @@ body {
   main {
     flex: 1 0 auto;
   }
-      
+
+  /* Added padding between button and footer */
+  .wheybox {
+      padding-bottom: 50px;
+  }
