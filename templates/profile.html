@@ -18,19 +18,20 @@
 <section>
   <!-- Image card templates from Materialize -->
   <!-- Shop whey protein card -->
-  <div class="row">
+  <div class="row profile-header">
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          <img src="{{url_for('static', filename='/images/' + 'shop-whey-protein.png')}}">
+          <span class="card-title"></span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5>Do you need whey protein?</h5>
+          <p>Whey protein is an essential ingredient for our recipes!</p>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+        <div class="card-action center-align">
+          <a href="https://www.wheybox.com/shop/" target="_blank" 
+            class="btn-small orange accent-4" >Shop whey protein</a>
         </div>
       </div>
     </div>
@@ -38,15 +39,16 @@
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          <img src="{{url_for('static', filename='/images/' + 'new-recipe.png')}}">
+          <span class="card-title"></span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5>Do you need inspiration?</h5>
+          <p>Search our recipe database for lots of healthy, tasty & high-protein meals, snacks and drinks.</p>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+        <div class="card-action center-align">
+          <a href="{{ url_for('recipes') }}" 
+            class="btn-small orange accent-4" >Find a recipe</a>
         </div>
       </div>
     </div>
@@ -54,15 +56,16 @@
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          <img src="{{url_for('static', filename='/images/' + 'add-recipe.png')}}">
+          <span class="card-title"></span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5>Do you have a good recipe?</h5>
+          <p>Add your recipe to our database to share your creation with others.</p>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+        <div class="card-action center-align">
+          <a href="{{ url_for('add_recipe') }}" 
+            class="btn-small orange accent-4" >Add your recipe</a>
         </div>
       </div>
     </div>

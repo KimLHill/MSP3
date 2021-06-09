@@ -162,6 +162,7 @@ Before I started coding my project, I created wireframes using Balsamiq. I creat
 * [Balsamiq](https://balsamiq.com/) used to create my wireframes.
 * Jinja - templating language for some of my Python code denoted by {% %}.
 * [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, modal, tooltip template and form templates.
+* [Canva](https://www.canva.com/) used to create the image for the add a recipe image card on the profile page.
 
 ### **Using My Project**
 
@@ -200,3 +201,6 @@ The images used on my wireframes and website are from:
 * [Carousel three](https://www.instagram.com/p/CKTfkGgAb-7/?utm_source=ig_web_copy_link)
 * [Carousel four](https://www.instagram.com/p/CN4jh4WARzo/?utm_source=ig_web_copy_link)
 * [Carousel five](https://www.instagram.com/p/ByuKPdcgCwY/?utm_source=ig_web_copy_link)
+* [Shop whey protein image card](https://www.instagram.com/p/BycFMvxlKKj/?utm_source=ig_web_copy_link)
+* [Find a recipe image card](https://www.instagram.com/p/CBGFdhgHSNo/?utm_source=ig_web_copy_link)
+* Add a recipe image card was created myself using Canva.
