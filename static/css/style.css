@@ -76,4 +76,9 @@ body {
       padding-bottom: 50px;
   }
 
+  /* Added padding above user profile card panel */
+  .profile-header {
+      padding-top: 30px;
+  }
+
   

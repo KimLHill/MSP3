@@ -85,7 +85,7 @@ My deployed project can be viewed live here.
 * I am new to cooking, I want to find healthy recipes with simple, easy cooking instructions, so I can learn to cook my own meals.
 * I am a bodybuilder, I want to find recipes, to cook meals that fit my calorie and macronutrient needs.
 * I am a gym user who wants to gain muscle, I want to find high-protein recipes using ingredients I already have.
-* I am a personal trainer, I want to find and share healthy, high-protein recipes with my clients.
+* I am a user who has submitted a recipe, I have since improved my recipe and want to update the recipe to improve it.
 
 ### The 5 Planes of UX ###
 Having created the user stories so that I knew who I was designing my website for, I then followed the user centred design process to create a website that would answer the above user stories.

@@ -1,14 +1,72 @@
 {% extends "base.html" %}
 {% block content %}
 
+<section class="profile-header">
+  <!-- User profile header -->
+  <!-- Card panel template from Materialize -->
   <div class="row">
     <div class="col s12 m8 offset-m2 grey darken-2">
       <div class="card-panel">
-        <h3 class="center-alig orange-text text-accent-3">
+        <h3 class="center-align orange-text text-accent-3">
           {{ username }}'s profile
         </h3>
       </div>
     </div>
   </div>
+</section>
+
+<section>
+  <!-- Image card templates from Materialize -->
+  <!-- Shop whey protein card -->
+  <div class="row">
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+    <!-- Need recipe inspiration card -->
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+    <!-- Add recipe card -->
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>    
 
 {% endblock %}
