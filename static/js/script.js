@@ -10,6 +10,8 @@ $(document).ready(function(){
     $('select').formSelect();
     // Initialize carousel functionality
     $('.carousel').carousel();
+    // Initialize delete task modal
+    $('.modal').modal();
     // Validation for category selection on add recipe form
     // Code created from following the Code Institute tutorial
     validateMaterializeSelect();

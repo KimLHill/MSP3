@@ -161,7 +161,34 @@ Before I started coding my project, I created wireframes using Balsamiq. I creat
 * [Coolors](https://coolors.co/616163-17bebb-fafaff-db995a-ff9f1c) to create a professional looking colour palette for my website.
 * [Balsamiq](https://balsamiq.com/) used to create my wireframes.
 * Jinja - templating language for some of my Python code denoted by {% %}.
-* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, tooltip template and form templates.
+* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, modal, tooltip template and form templates.
+
+### **Using My Project**
+
+To run my project locally you can clone the project.
+
+* To clone my project, complete the following steps:
+
+    1. Open GitHub.
+    2. Select my project repository called KimLHill/Kimberley_Hill_MSP2.
+    3. Click on the green ‘Code’ button.
+    4. Click the clipboard icon next to the url to copy the url link.
+    5. Open Git Bash.
+    6. Change the current working directory to the location where you want the cloned directory.
+    7. Type git clone, and then paste the url link you copied in step 4.
+    8. Press enter to create your local clone.
+
+        Alternative methods of cloning my project can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+To make a copy of my project to your GitHub account, you can fork a copy of my project.
+
+* To fork a copy of my project, complete the following steps:
+
+    1. Log in to your GitHub account (or create a new account).
+    2. Search for my repository called KimLHill/Kimberley_Hill_MSP2.
+    3. In the far right-hand corner of the screen at the top of the repository, click the ‘fork’ button next to the fork icon.
+
+    Further information about forking a repository can be found [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 ### Acknowledgements ###
 * My Code Institute mentor Seun Owonikoko whose feedback throughout the project influenced my website design, content and features.
