@@ -28,6 +28,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- Icon from Font Awesome -->
+                    <!-- Get current recipe name from database-->
                     <i class="fas fa-pencil-alt prefix orange-text text-accent-3"></i>
                     <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
                      value="{{ recipe.recipe_name }}" type="text" class="validate" required>
@@ -79,44 +80,40 @@
             <!-- Recipe calories field -->
             <div class="row">
                 <div class="input-field col s6">
-                    <!-- Get current recipe method from database-->
-                    <!-- Removed whitespace to sit nicely on line -->
-                    <textarea id="recipe_calories" name="recipe_calories" minlength="1"
-                    maxlength="25"class="materialize-textarea validate" required>
-                        {{- recipe.recipe_calories -}}
-                    </textarea>
-                    <label for="recipe_calories">Recipe calories</label>
+                    <!-- Get current recipe calories from database-->
+                    <!-- User limited to inputting numbers only -->
+                    <input id="recipe_calories" name="recipe_calories" minlength="1" 
+                    maxlength="5" value="{{ recipe.recipe_calories }}" type="text" 
+                    pattern="^[0-9]{1,5}$" class="validate" required>
+                    <label for="recipe_calories">Calories</label>
                 </div>
             <!-- Recipe protein field -->
             <div class="input-field col s6">
-                    <!-- Get current recipe method from database-->
-                    <!-- Removed whitespace to sit nicely on line -->
-                    <textarea id="recipe_protein" name="recipe_protein" minlength="1"
-                    maxlength="3"class="materialize-textarea validate" required>
-                        {{- recipe.recipe_protein -}}
-                    </textarea>
+                    <!-- Get current recipe protein from database-->
+                    <!-- User limited to inputting numbers only -->
+                    <input id="recipe_protein" name="recipe_protein" minlength="1" 
+                    maxlength="3" value="{{ recipe.recipe_protein }}" type="text" 
+                    pattern="^[0-9]{1,3}$" class="validate" required>
                     <label for="recipe_protein">Protein</label>
                 </div>
             </div>
             <!-- Recipe carbohydrates field -->
             <div class="row">
                 <div class="input-field col s6">
-                    <!-- Get current recipe method from database-->
-                    <!-- Removed whitespace to sit nicely on line -->
-                    <textarea id="recipe_carbohydrate" name="recipe_carbohydrate" minlength="1"
-                    maxlength="3"class="materialize-textarea validate" required>
-                        {{- recipe.recipe_carbohydrate -}}
-                    </textarea>
+                    <!-- Get current recipe carbohydrate from database-->
+                    <!-- User limited to inputting numbers only -->
+                    <input id="recipe_carbohydrate" name="recipe_carbohydrate" minlength="1" 
+                    maxlength="3" value="{{ recipe.recipe_carbohydrate }}" type="text" 
+                    pattern="^[0-9]{1,3}$" class="validate" required>
                     <label for="recipe_carbohydrate">Carbohydrate</label>
                 </div>
             <!-- Recipe fat field -->
             <div class="input-field col s6">
-                    <!-- Get current recipe method from database-->
-                    <!-- Removed whitespace to sit nicely on line -->
-                    <textarea id="recipe_fat" name="recipe_fat" minlength="1"
-                    maxlength="3"class="materialize-textarea validate" required>
-                        {{- recipe.recipe_fat -}}
-                    </textarea>
+                    <!-- Get current recipe fat from database-->
+                    <!-- User limited to inputting numbers only -->
+                    <input id="recipe_fat" name="recipe_fat" minlength="1" 
+                    maxlength="3" value="{{ recipe.recipe_fat }}" type="text" 
+                    pattern="^[0-9]{1,3}$" class="validate" required>
                     <label for="recipe_fat">Fat</label>
                 </div>
             </div>
