@@ -105,6 +105,65 @@ Features consistent across all the different pages of my project include:
 4. **Footer**
     * The footer is the same peach colour (#ff6e40) as the closest Materialize match to the Coolors palette. It is the same colour across all pages to provide consistency in design. It includes social media links and copyright information which are coloured (#1f1300) to fit with the brest of the text colour across the website. The footer is the normal place that a user would look for this information. The social media links open a new tab, when clicked by the user, to take them to the corresponding website.
 
+5. **Flash messages**
+    * All flash messages are the same in style, font size and colour. They are all full-screen width and located at the top of the page the user is on. The test is centered and large to be easy to read. The colour is a deep orange to fit the colour theme and attract the user's attention.
+
+Features on the seperate pages include:
+1. **Home Page**
+    * Includes a carousel of 5 images which all promote the website owner's whey protein product that they are trying to get the website user to purchase. It shows the whey protein being enjoyed by people and being used in recipes. These images are relevant to the purpose of the website and will appeal to the intended website users.
+
+2. **Recipes Page**
+    * Includes a search bar that invites the website user to search for a recipe name that they would like to find. Along with two buttons: one to perform their search and the other to reset back to the full recipe list after they have performed a search. The buttons are different colours to make it visually obvious to the user that these buttons have different purposes.
+    * Includes a collapsible accordian with the recipe infomration. When unselected, the accordian header shows the recipe name and recipe description to quickly provide information about that recipe to the user. The user is prompted to expand the collapisble with a dropdown arrow symbol. There is also a utensils font awesome icon that provides a visual indication of a quick to serve meal. When selected the collapsible expands to provide the rest of the recipe information. A header, paragraphs and bold text elements make it easy for the user to read, find and understand the information displayed.
+
+    **Additional features for logged in users**
+
+     * A red delete button in the header of the collapsible, is displayed next to the user's own recipes. The red provides a visual warning that pressing the delete button is an action that will remove the recipe.
+     * An orange edit button in the header of the collapsible, is displayed next to the user's own recipes. The orange fits with the colour scheme of the website and is friendlier than the harsh red of the delete button to emphasis that this is an edit not delete option. Pressing this button opens the edit recipe form.
+
+3. **Login page**
+    * Includes a login form requiring the user to enter their username and password and then submit their information by pressing the 'login' button to access their account. 
+    * Includes a link to the register page if the user doesn't already have an account to login to.
+    * If the user enters an incorrect username or password, a flash message appears saying: "Incorrect username and/or password". This is a full-screen width message with an obvious dark orange border at the top of the page to be really obvious to the user.
+    * Both the username and password form inputs must be completed before the user can login.
+
+4. **Register page**
+    * Includes a register form requiring the user to enter a username and password and then submit their information by pressing the 'register' button to create their account. 
+    * Includes a link to the login page if the user already has an account to login to.
+    * If the user enters a username that already exists in the database, a flash message appears saying: "Username already exists, please try again". This is a full-screen width message with an obvious dark orange border at the top of the page to be really obvious to the user.
+    * The password must be between 8 and 15 characters and include only a-zA-Z0-9.
+    * Both the username and password form inputs must be completed before the user can register.
+
+5. **Profile page**
+    * Includes an initial flash message welcoming the user. This is a full-screen width message with an obvious dark orange border at the top of the page to be really obvious to the user.
+    * Includes a profile box saying "{username's} profile" to personalise the profile page to that user.
+    * Includes three image cards to provide visual appeal to the user. Image card one promotes the different whey protein flavours sold by the website owner, with a button encouraging the user to 'shop whey protein' that when clicked opens the website owner's online shop in a new tab. Image card two promotes a recipe made using the site owner's whey protein product. A 'find a recipe' button linked to the recipes page encourgaes the user to find or search for a recipe. Image card three has a question mark along with a 'add your recipe' button linked to the add recipe form, encourages the user to interact with the website.
+
+6. **Logout**
+    * Upon clicking the logout navbar tab, the user is redirected back to the login form. A flash message appears saying: "You have successfully logged out" to confirm to the user that they have logged out. This is a full-screen width message with an obvious dark orange border at the top of the page to be really obvious to the user.
+
+7. **Add recipe**
+    * Includes a form that requires all the inputs to be completed before the user can add their recipe.
+    * Icons next to some of the form inputs aid the understanding of what the field inputs mean.
+    * Some inputs like the calories, protein, carbohydrate and fat fields only accept numeric values to encourage the user to complete the form correctly.
+    * The recipe category input is a dropdown menu for the user to quickly and easily select one of the categories available in the database.
+    * One click at the end of the form via the 'add recipe' button, adds their recipe to the database. This button also has a plus icon to further improve the user experience. Upon clicking the button, the user is returned to the recipes page and a flash message saying: "Recipe successfully added" confirms that their recipe has been included in the database.
+    * The icons and button are orange, in keeping with the rest of the website.
+
+8. **Edit recipe**
+    * Upon clicking the 'edit' button, the user is directed to the edit recipe form. This looks exactly the same as the add recipe form so will already be familiar to the user. Furthermore it is preloaded with the information from the original recipe. this makes it simple for the user to see what the current recipe says and makes editing the recipe a quicker process. 
+    * The user has two options: a red 'cancel' button and an orange 'edit recipe' button. The red 'cancel' button has a red cross to enhance the user's understanding of this button's function. Clicking this button returns the user to the recipes page. The orange 'edit recipe' button has an edit icon, again enhancing the user's understanding of the button's purpose. Clicking this button causes a flash message saying: "Recipe successfully updated" to appear.
+
+9. **Delete recipe**
+    * Upon clicking the 'delete' button, a modal appears with an obvious 'stop!' header and a message saying: "Are you sure you want to delete this recipe?". The user then has two options: a 'no, save recipe' button, coloured green to indicate that this saves the recipe and a red 'yes, delete recipe' button, coloured red to warn that this removes the recipe. Clicking to save the recipe returns the user to the recipes page. Clicking to delete the recipe also returns the user to ther ecipe page but this time with a flash message saying: "Recipe successfully deleted".
+
+### **Features changed from wireframes**
+* The text content of the website was improved and added to as the project progressed.
+* Image carousel on the home page was changed from a scrolling image display to a carousel that the user has to click/swipe to change the image displayed. This was changed to encourage the user to interact with the website more, which is likely to increase their use of the website and also to explore it more and also makes the user more likely to click on button links to the shop if they are already interacting with the site.
+* Added a background filled orange square border to the dropdown arrow symbol on the collapsible accordian to make it even more visually obvious to the user that there is more information if the user expands the collapsible. The symbol encourages the user to click on it.
+* Added a tooltip to the utensils icon on the collapsible accordian which reads: "quick & easy recipe" to aid the user's understanding of the meaning of this symbol.
+* Added a modal that confirms with the user that they really did mean to delete the recipe upon clicking the delete button. This acts as defensive programming to prevent the user accidentally removing the recipe. To delete the recipe, the user now has to confirm on the modal that they do wish to delete, but they also have the option to cancel and keep the recipe if the first click was unintentional.
+
 ### **Future Scope**
 
 ### Technologies Used ###
