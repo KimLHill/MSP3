@@ -1,6 +1,6 @@
 import os
 from flask import (
-    Flask, flash, render_template, 
+    Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -54,7 +54,7 @@ def register():
             flash("Username already exists, please try again")
             # return user to register page to try again
             return redirect(url_for("register"))
-        
+
         # else if no existing user, register user
         register = {
             "username": request.form.get("username").lower(),
@@ -65,7 +65,7 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         # message to alert user that their registration was successful
-        flash ("Registration successful")
+        flash("Registration successful")
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
 
@@ -82,22 +82,20 @@ def login():
         if existing_user:
             # check hashed password matches user input, welcome user
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(
-                        request.form.get("username")))
-                    return redirect(url_for(
-                        "profile", username=session["user"]))
+                    existing_user["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect username and/or password")
                 return redirect(url_for("login"))
-        
         else:
             # username doesn't exist
             flash("Incorrect username and/or password")
             return redirect(url_for("login"))
-            
     return render_template("login.html")
 
 
@@ -107,11 +105,9 @@ def profile(username):
     # get the session user's username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    
     # if session["user"] cookie is true, return user profile
     if session["user"]:
         return render_template("profile.html", username=username)
-    
     # else redirect user to login page
     return redirect(url_for("login"))
 
@@ -183,7 +179,6 @@ def edit_recipe(recipe_id):
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         # success message
         flash("Recipe successfully updated")
-        
     # find the recipe in database
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)

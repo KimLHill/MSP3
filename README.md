@@ -163,18 +163,13 @@ Before I started coding my project, I created wireframes using Balsamiq. I creat
 * Jinja - templating language for some of my Python code denoted by {% %}.
 * [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, modal, tooltip template and form templates.
 * [Canva](https://www.canva.com/) used to create the image for the add a recipe image card on the profile page.
-* [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
-    * used to check the validity of my html code for all .html pages.
-* [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/#validate_by_input)
-    * used to check the validity of my css code for style.css file.
-* [JSHint](https://jshint.com/)
-    * used to check the validity of my javascript code for all .js files.
-* [Am I responsive](http://ami.responsivedesign.is/#)
-    * used to check the responsiveness of my design on different screen sizes and for creating the first image in this README file.
-* [Paint 3D](https://microsoft-paint-3d.en.softonic.com/)
-    * used to crop the screenshots of images added to this README.md file and testing.md file.
-* [Google Chrom Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
-    * used to generate Lighthouse reports on the performance of all my web pages once the project was deployed.
+* [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) used to check the validity of my html code for all .html pages.
+* [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/#validate_by_input) used to check the validity of my css code for style.css file.
+* [JSHint](https://jshint.com/) used to check the validity of my javascript code for all .js files.
+* [PEP8 Online](http://pep8online.com/) used to check the PEP8 compliance of my Python code.
+* [Am I responsive](http://ami.responsivedesign.is/#) used to check the responsiveness of my design on different screen sizes and for creating the first image in this README file.
+* [Paint 3D](https://microsoft-paint-3d.en.softonic.com/) used to crop the screenshots of images added to this README.md file and testing.md file.
+* [Google Chrom Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) used to generate Lighthouse reports on the performance of all my web pages once the project was deployed.
 
 ### **Using My Project**
 
@@ -203,6 +198,11 @@ To make a copy of my project to your GitHub account, you can fork a copy of my p
 
     Further information about forking a repository can be found [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
+### **Credits**
+* The website is for a fictional online cookbook, the content is fictional and was created by myself.
+* I used this [post](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom) to get the comment to resolve the JSHint warnings cause by esversion: 6.
+* Photos used were from [Wheybox's Instagram page](https://www.instagram.com/whey_box/), a link to each for each image is provided below under Media. 
+
 ### Acknowledgements ###
 * My Code Institute mentor Seun Owonikoko whose feedback throughout the project influenced my website design, content and features.
 
@@ -215,4 +215,5 @@ The images used on my wireframes and website are from:
 * [Carousel five](https://www.instagram.com/p/ByuKPdcgCwY/?utm_source=ig_web_copy_link)
 * [Shop whey protein image card](https://www.instagram.com/p/BycFMvxlKKj/?utm_source=ig_web_copy_link)
 * [Find a recipe image card](https://www.instagram.com/p/CBGFdhgHSNo/?utm_source=ig_web_copy_link)
+[Tablet outline](https://image.freepik.com/free-icon/computer-tablet_318-40639.jpg) used for creating my tablet wireframes.
 * Add a recipe image card was created myself using Canva.

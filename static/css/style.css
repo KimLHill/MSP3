@@ -71,14 +71,24 @@ body {
     flex: 1 0 auto;
   }
 
-  /* Added padding between button and footer */
-  .wheybox {
-      padding-bottom: 50px;
-  }
+/* Added padding between button and footer */
+.wheybox {
+    padding-bottom: 50px;
+}
 
-  /* Added padding above profile card panels */
-  .profile-header {
-      padding-top: 50px;
-  }
+/* Added padding above profile card panels */
+.profile-header {
+    padding-top: 50px;
+}
 
-  
+/* Reduce deafult logo text size */
+#logo {
+    font-size: 15px;
+}
+
+/* Increase logo text size above small breakpoint*/
+@media screen and (min-width: 576px){
+    #logo {
+        font-size: 30px;
+    }
+}
