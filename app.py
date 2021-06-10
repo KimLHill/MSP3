@@ -33,6 +33,7 @@ def recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+# Routing for the search recipes functionality
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -190,7 +191,7 @@ def edit_recipe(recipe_id):
         "edit_recipe.html", recipe=recipe, categories=categories)
 
 
-# Routing for the edit recipe page
+# Routing for the delete recipe page
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     # find recipe in database and remove

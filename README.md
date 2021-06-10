@@ -163,6 +163,18 @@ Before I started coding my project, I created wireframes using Balsamiq. I creat
 * Jinja - templating language for some of my Python code denoted by {% %}.
 * [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, modal, tooltip template and form templates.
 * [Canva](https://www.canva.com/) used to create the image for the add a recipe image card on the profile page.
+* [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
+    * used to check the validity of my html code for all .html pages.
+* [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/#validate_by_input)
+    * used to check the validity of my css code for style.css file.
+* [JSHint](https://jshint.com/)
+    * used to check the validity of my javascript code for all .js files.
+* [Am I responsive](http://ami.responsivedesign.is/#)
+    * used to check the responsiveness of my design on different screen sizes and for creating the first image in this README file.
+* [Paint 3D](https://microsoft-paint-3d.en.softonic.com/)
+    * used to crop the screenshots of images added to this README.md file and testing.md file.
+* [Google Chrom Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
+    * used to generate Lighthouse reports on the performance of all my web pages once the project was deployed.
 
 ### **Using My Project**
 

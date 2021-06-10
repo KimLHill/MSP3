@@ -20,7 +20,7 @@
         <!-- Main top navbar-->
         <!--Sticky navbar from Materialize with custom styling-->
         <div class="navbar-fixed">
-        <nav class="nav-extended text-shadow orange accent-3">
+          <nav class="nav-extended text-shadow orange accent-3">
             <div class="nav-wrapper">
               <a href="{{ url_for('index') }}" class="brand-logo">Whey Too Tasty!</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
@@ -42,9 +42,8 @@
                 {% endif %}
               </ul>
             </div>
-          </div>
           </nav>
-
+        </div>
           <!-- Mobile navbar-->
           <ul class="sidenav" id="mobile-demo">
             <!-- Whey Too Tasty header on mobile collapsible navbar-->
@@ -65,7 +64,6 @@
           </ul>
     </header>
 
-    
     <section>
       <!-- flash messages -->
       {% with messages = get_flashed_messages() %}
@@ -104,7 +102,6 @@
       </div>
     </section>
 </body>
-
 <footer class="page-footer deep-orange accent-2">
   <!--social media links and copyright info-->
   <div class="container footer">
@@ -124,8 +121,8 @@
           </a>
         </div>
         <p>Copyright © 2021 GTC</p><br>
+      </div>
     </div>
   </div>
 </footer>
-
 </html>
