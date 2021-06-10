@@ -87,8 +87,15 @@ body {
 }
 
 /* Increase logo text size above small breakpoint*/
-@media screen and (min-width: 576px){
+@media screen and (min-width: 480px){
     #logo {
         font-size: 30px;
+    }
+}
+
+/* Apply padding-left to logo above large breakpoint*/
+@media screen and (min-width: 1025px){
+    #logo {
+        padding-left: 30px;
     }
 }

@@ -1,72 +1,11 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome KimLHill,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
-
-
-
-
 # Code Institute: Milestone Project 3 #
 
 ## Whey Too Tasty ##
 This project has been created for my Milestone Project 3 for the Full Stack Development Diploma at The Code Institute. The purpose of the project is to create a full-stack site that allows your users to manage a common dataset about a particular domain, using HTML, CSS and Javascript, Python + Flask and MongoDB.
 
 Whey Too Tasty is a fictional online cookbook for healthy, high-protein recipes. The purpose of Whey Too Tasty is to provide a website where user’s can find and share recipes whilst promoting the website owner’s protein powder product. User’s will interact with the website through being able to  create, upload, edit, delete, find and share recipes.
+
+![Whey Too Tasty2](https://user-images.githubusercontent.com/74603013/121527722-9e4c4800-c9f2-11eb-88a4-2d474e0a148d.png)
 
 My deployed project can be viewed live here.
 
@@ -151,6 +90,22 @@ Before I started coding my project, I created wireframes using Balsamiq. I creat
 
 **Wireframes for desktop devices**
 
+### **Features**
+Features consistent across all the different pages of my project include:
+
+1. **Navbar**
+    * The navbar has the Whey Too Tasty logo which, when clicked, returns the user to the home page. On the right-hand side are the navigation tabs linking to each of the pages. The navbar tabs change depending on whether or not the user is logged in, to provide a better user experience by showing them only what they need. The orange (#ff9100) fits with the colour scheme and provides a good contrast for the white-coloured text and logo. A text-shadow effect, further enhances readability.When the user hovers over a navbar tab, the background colour of the tab changes to provide visual feedback as to which tab they are about to click. The navbar collapses to a toggle button on tablet and mobile devices for an improved user experience on smaller screen sizes.
+
+2. **Title**
+    * Each page starts with a simple title, that explains the purpose of that page. The text colour (#1f1300) is consistent across all pages and fits with the Coolors palette.
+
+3. **Prompt to buy whey protein and link button**
+    * At the bottom of each page, above the footer, is a header prompting the user to buy whey protein by asking "Do you need whey protein?" with a button just below that takes the user to the site owners whey protein powder shop where they can make their purchase. The header text colour (#1f1300) is consistent across all pages and fits with the Coolors palette. The button colour (#ff6d00) is consistent across all pages, fits with the colour scheme, matches the other main call-to-action buttons and is a obvious colour and centre-aligned for obvious positioning.
+
+4. **Footer**
+    * The footer is the same peach colour (#ff6e40) as the closest Materialize match to the Coolors palette. It is the same colour across all pages to provide consistency in design. It includes social media links and copyright information which are coloured (#1f1300) to fit with the brest of the text colour across the website. The footer is the normal place that a user would look for this information. The social media links open a new tab, when clicked by the user, to take them to the corresponding website.
+
+### **Future Scope**
 
 ### Technologies Used ###
 * HTML5 used for the .html pages
@@ -170,6 +125,9 @@ Before I started coding my project, I created wireframes using Balsamiq. I creat
 * [Am I responsive](http://ami.responsivedesign.is/#) used to check the responsiveness of my design on different screen sizes and for creating the first image in this README file.
 * [Paint 3D](https://microsoft-paint-3d.en.softonic.com/) used to crop the screenshots of images added to this README.md file and testing.md file.
 * [Google Chrom Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) used to generate Lighthouse reports on the performance of all my web pages once the project was deployed.
+
+### **Testing**
+The testing that I undertook on my project is detailed in the [testing.md](testing.md) file. 
 
 ### **Using My Project**
 
