@@ -163,6 +163,7 @@ Features on the seperate pages include:
 * Added a background filled orange square border to the dropdown arrow symbol on the collapsible accordian to make it even more visually obvious to the user that there is more information if the user expands the collapsible. The symbol encourages the user to click on it.
 * Added a tooltip to the utensils icon on the collapsible accordian which reads: "quick & easy recipe" to aid the user's understanding of the meaning of this symbol.
 * Added a modal that confirms with the user that they really did mean to delete the recipe upon clicking the delete button. This acts as defensive programming to prevent the user accidentally removing the recipe. To delete the recipe, the user now has to confirm on the modal that they do wish to delete, but they also have the option to cancel and keep the recipe if the first click was unintentional.
+* Made the Whey Too Tasty logo smaller to fit better on smaller screen sizes, then added a media query to make the logo bigger on tablet and desktop devices to improve the user experience.
 
 ### **Future Scope**
 

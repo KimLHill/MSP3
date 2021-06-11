@@ -103,4 +103,22 @@ I corrected these errors and the PEP8 test passed.
 
 However, even splitting the line onto a seperate line, the password was still too long to be PEP8 compliant. I therefore chose to not edit my code as this password is needed to access the MONGO_URI.
 
+### **Testing Compatibility With Browsers**
+I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, responsiveness and design worked as planned.
+
+### **Testing Compatibility With Different Devices**
+I manually tested the website on a mobile and desktop device. I sent the link for my deployed website to family, who also checked the website on their devices. The website worked for the variety of mobile and desktop devices tested. I didn't have access to a tablet device, so I tested this via the 'Inspect accessibility properties' option when right-clicking on the website and choosing the ipad view.
+
+## **Bugs Found In Testing**
+* On the profile page, the image cards were different heights and two of the headings were more than one line length. 
+
+![uneven image card lengths](https://user-images.githubusercontent.com/74603013/121676720-e16af180-caac-11eb-993c-3f1995600b36.png)
+
+I fixed the different height problem by adding the class of 'large' to all three of the image cards. This is a Materialize class for setting a fixed height to the cards. This made them the same height which looked better. However, the different line lengths of the headings didn't look good to me. I tried changing to a smaller h6 header and also just using bold text, but the headings still required two lines. As I liked the three image cards being displayed next to each other on a desktop device, I didn't want to change the grid layout col value. Instead I opted for shorter one-line headings on all three image cards. This has the added benefit of being short and catchy so the user is more likely to read it! I also added the class of center-align for the heading and paragraph which further improved the visual appeal of the profile page.
+
+![better image cards](https://user-images.githubusercontent.com/74603013/121677488-d795be00-caad-11eb-9548-3818a4bcb9ce.png)
+
+
+
+
 
