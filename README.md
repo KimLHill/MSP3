@@ -173,7 +173,7 @@ Features on the seperate pages include:
 ### Technologies Used ###
 * HTML5 used for the .html pages
 * CSS used to style the html pages.
-* Javascript used to make my website interactive.
+* Javascript used to make my website interactive with the carousel and collapisble accordian.
 * [jQuery](https://api.jquery.com/) javascript library used for my javascript code denoted by $ prefix on script.js.
 * [Random Key Gen](https://randomkeygen.com/) to produce the secure passwords used in my project.
 * [Coolors](https://coolors.co/616163-17bebb-fafaff-db995a-ff9f1c) to create a professional looking colour palette for my website.
@@ -188,6 +188,8 @@ Features on the seperate pages include:
 * [Am I responsive](http://ami.responsivedesign.is/#) used to check the responsiveness of my design on different screen sizes and for creating the first image in this README file.
 * [Paint 3D](https://microsoft-paint-3d.en.softonic.com/) used to crop the screenshots of images added to this README.md file and testing.md file.
 * [Google Chrom Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) used to generate Lighthouse reports on the performance of all my web pages once the project was deployed.
+* [Heroku](https://www.heroku.com/what) to deploy my website live.
+* [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_emea_united_kingdom_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204562&msclkid=9d365b5212331e600c093b9174dbb54f) to create my database used in this project.
 
 ### **Testing**
 The testing that I undertook on my project is detailed in the [testing.md](testing.md) file. 

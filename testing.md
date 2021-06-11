@@ -143,6 +143,106 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 
 ![reset search](https://user-images.githubusercontent.com/74603013/121686327-ecc41a00-cab8-11eb-8529-5606c1775ce9.png)
 
+* I then tried to perform a search without having entered any text into the search bar. As expected, the search was not performed and a prompt to complete the field was displayed to the user as well as a red line to further indicate a problem.
+
+![empty search error](https://user-images.githubusercontent.com/74603013/121689467-8a6d1880-cabc-11eb-9b55-5adc4f9beb2d.png)
+
+* I then performed a search for something that I knew was not in the recipe database. I entered the word 'hello' and clicked the 'search' button. I could then confirm that a message was displayed telling the user "No results found". This text is displayed in a red colour to provide a further visual indication of a problem.
+
+![no search results](https://user-images.githubusercontent.com/74603013/121689633-c30cf200-cabc-11eb-8083-fdbcfbb6eea1.png)
+
+### **Testing the edit recipe form**
+* Firstly I logged in as a user who had added recipes to the database. I then navigated to the recipes page and ensured that I could see 'edit' and 'delete' buttons in the collapsible accordian header, but only on the recipes that I had added and not on all recipes. 
+
+
+![edit my recipes](https://user-images.githubusercontent.com/74603013/121690210-770e7d00-cabd-11eb-954a-fff530856608.png)
+
+* I then clicked on the edit button to ensure that I was taken to the 'Edit recipe' form. I also checked that this form was displaying as intended with the category selection menu, had retrieved the information from the original recipe and was displaying these correctly in each form input field, had ornage coloured icons next to the full wdith form fields and a clickable 'edit recipe' button or cancel button both with icons.
+
+![edit recipe form](https://user-images.githubusercontent.com/74603013/121690579-eedca780-cabd-11eb-92cd-b3d71efbada9.png)
+
+* I then clicked the 'cancel' button to confirm that I was returned to the recipe page.
+* I then reclicked the'edit' button to re-access the 'edit recipe' form. I made sure that I could select options from the recipe category dropdown.
+
+![edit category selection](https://user-images.githubusercontent.com/74603013/121690872-4844d680-cabe-11eb-9f78-2588dd73d520.png)
+
+* I then filled out the form whilst performing several checks. I left the recipe description blank, entered a text (not numeric) value into the calories field and entered a negative number into the protein field. These three fields were correctly coloured red to provide a visual error indication to the user and checked that the validation and type input code was working. I also tested the toggle switch to makesure I could change this. I then tried to click the 'edit recipe' button and confirmed that it would not let me because of the errors in my input.
+
+![testing edit recipe fields](https://user-images.githubusercontent.com/74603013/121691591-154f1280-cabf-11eb-9d1b-3e4b7418797e.png)
+
+* I corrected the errors and clicked the 'edit recipe' button. I then confirmed that the flash message displayed with the correct message to confirm to the user that the recipe had been edited.
+
+![flash edited message](https://user-images.githubusercontent.com/74603013/121692280-dd949a80-cabf-11eb-904e-21a5dfb857e9.png)
+
+* I then navigated to the recipes page and confirmed that the edited 'nectarine & seed museli' recipe could be seen and that it had replaced the old 'fav drink' recipe. I thene xpanded the collapsible to ensure the full edited recipe details were displayed and correct.
+
+![muesli recipe](https://user-images.githubusercontent.com/74603013/121692581-20567280-cac0-11eb-8c0e-f3b323bd4157.png)
+
+### **Testing the delete recipe functionality**
+* I clicked the red 'delete' button next to the recipe I wanted to delete. I confirmede that a modal appeared and displayed the correct information, warning the user that they were about to delete the recipe and providing two button options 'no, save recipe' and 'yes, delete recipe'. This proved the defensive programming functionality was working to prevent a one-click accidental deletion of a recipe by a user. I also checked the colours of the buttons were correct - green to save the recipe, red warning colour for the delete recipe button.
+
+![delete modal](https://user-images.githubusercontent.com/74603013/121693004-9b1f8d80-cac0-11eb-8931-982f7ab12dae.png)
+
+* I clicked on the 'no, save recipe' button and confirmed that I was returned to the recipes page and that I could still see my recipe in the list.
+* Before deleting a recipe from the database, I first checked my MongoDB account which showed that there were 12 recipes in the recipes database.
+
+![12 recipes](https://user-images.githubusercontent.com/74603013/121695689-33b70d00-cac3-11eb-9051-48267fe9f002.png)
+
+* I then re-clicked the 'delete' button next to the recipe I wanted to delete on the recipes page and this time clicked the 'yes, delete recipe' button on the modal. I then confirmed that I was taken back to the recipes page, that the flash message was displayed with the correct message and that I could only see 11 not 12 reckipes in the database with the correct recipe having been removed from the list.
+
+![deleted flash message](https://user-images.githubusercontent.com/74603013/121696962-7e855480-cac4-11eb-82ae-856bf4e24b1b.png)
+
+* I then re-checked my recipes database on MongoDB to confirm that there were only 11 recipes now in the database.
+
+![11 recipes](https://user-images.githubusercontent.com/74603013/121697220-be4c3c00-cac4-11eb-9627-4a1197d6b8d5.png)
+
+### **Testing the add recipe functionality**
+* I clicked on the 'add recipe' navbar tab and confirmed that this opened the 'Add recipe' form. I confirmed that the form was displaying as intended and looked the same as the 'edit recipe' form for consistency to the user experience, with the exception of the different title and 'Add recipe' button with correct icon.
+
+![add recipe form](https://user-images.githubusercontent.com/74603013/121697850-5f3af700-cac5-11eb-9a83-11dbcbb756e9.png)
+
+* I then ensured that the user had to choose a category or else a red error was displayed.
+
+![choose category error](https://user-images.githubusercontent.com/74603013/121698085-93aeb300-cac5-11eb-8cd4-1d40e2699219.png)
+
+* I madesure that the category dropdown displayed the correct information, that any empty fields were displayed red, that the numeric only inputs only allowed positive numbers, that toggle switch could be changed to on or off and that I couldn't add my recipe with the 'add recipe' button if all the fields weren't completed.
+
+![incorrect form inputs](https://user-images.githubusercontent.com/74603013/121698712-2d766000-cac6-11eb-8aad-55589e124344.png)
+
+* I then correctly completed the form and clciked the 'add recipe' button. I confirmed that I was taken to the recipes page, that a flash message confirming to the user that the recipe had been added and that I could see my newly added recipe as the first recipe in the list. I also confirmed that I had the option to 'edit' or 'delete' my newly added recipe.
+
+![added recipe flash message](https://user-images.githubusercontent.com/74603013/121699613-02404080-cac7-11eb-91aa-08209a2ad7bd.png)
+
+* I then clicked on my recipe to expand the collapsible and checked that my recipe details could be seen and matched what I had entered into the form.
+
+![new recipe](https://user-images.githubusercontent.com/74603013/121699949-52b79e00-cac7-11eb-8925-8bb2e7bcf391.png)
+
+* I checked back on my MongoDB recipes database to confirm that the number of recipes was back up to 12 recipes and that I could see the details of my newly added recipe in the database.
+
+![back to 12 recipes](https://user-images.githubusercontent.com/74603013/121700393-c5287e00-cac7-11eb-9c35-94894bd5750b.png)
+![new recipe in db](https://user-images.githubusercontent.com/74603013/121700402-c6f24180-cac7-11eb-8890-eca537014835.png)
+
+* Finally I checked that I could view all 12 recipes on the recipe page.
+
+![12 recipes displayed](https://user-images.githubusercontent.com/74603013/121700674-0d47a080-cac8-11eb-8f25-b5c4ab2b5959.png)
+
+### **Testing the profile page**
+* I navigated to the profile page and made sure that the correct username profile message was shown for the user I was signed in as (kimle), that I could see all the image card correctly and that all the image card buttons took me to the correct link or form as expected.
+
+![profile page](https://user-images.githubusercontent.com/74603013/121700870-39632180-cac8-11eb-9dc4-ab9848ca010c.png)
+
+### **Testing the logout functionality**
+* I clicked the 'logout' navbar tab and confirmed that I was taken to the login page, that a flash message confirmed to the user that they had successfully logged out of their account and that the navbar tabs had changed so that I could no longer access the profile page or add recipe form.
+
+![logout flash message](https://user-images.githubusercontent.com/74603013/121701340-b42c3c80-cac8-11eb-9630-00391663ae6f.png)
+
+* I also checked that when I went to the recipes page, having logged out of my account, that I no longer had the option to 'edit' or 'delete' my recipes.
+
+![cant change recipes](https://user-images.githubusercontent.com/74603013/121701765-26048600-cac9-11eb-9fe5-8da88f0afd46.png)
+
+### **Testing the register functionality**
+* 
+
 
 
 
