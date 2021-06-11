@@ -118,6 +118,11 @@ I fixed the different height problem by adding the class of 'large' to all three
 
 ![better image cards](https://user-images.githubusercontent.com/74603013/121677488-d795be00-caad-11eb-9548-3818a4bcb9ce.png)
 
+* On the add recipe and edit recipe form, the calories, protein, carbohydrate and fat form fields still allowed letters to be entered. I wanted these fields to be numeric values only to prompt the user to enter the correct information. I realised this was because I had the type="text" so I changed this to type="number". This then corrected the error and also added a helpful up/down arrows to help the user change the value, as well as allow manual input.
+
+![text to numeric add recipe change](https://user-images.githubusercontent.com/74603013/121678444-1aa46100-caaf-11eb-88ba-de0b3e7bcb1d.png)
+
+However, this created another problem in that these form fields could then allow (even encourage) the user to enter a negative value which is clearly incorrect and undesirable. I then added the class of min="0" to makesure that the validation only allowed positive numbers to be entered. I used this [post](https://stackoverflow.com/questions/31575496/prevent-negative-inputs-in-form-input-type-number) to get understand that the min class was required for allowing only positive values.
 
 
 

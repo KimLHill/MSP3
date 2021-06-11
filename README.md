@@ -219,6 +219,7 @@ To make a copy of my project to your GitHub account, you can fork a copy of my p
 ### **Credits**
 * The website is for a fictional online cookbook, the content is fictional and was created by myself.
 * I used this [post](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom) to get the comment to resolve the JSHint warnings cause by esversion: 6.
+* I used this [post](https://stackoverflow.com/questions/31575496/prevent-negative-inputs-in-form-input-type-number) to get the min="0" class for ensuring only positive numbers could be added for my numeric form input fields on the add recipe and edit recipe forms.
 * Photos used were from [Wheybox's Instagram page](https://www.instagram.com/whey_box/), a link to each for each image is provided below under Media. 
 
 ### Acknowledgements ###

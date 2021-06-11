@@ -65,14 +65,14 @@
                 <div class="input-field col s6">
                     <!-- User limited to inputting numbers only -->
                     <input id="recipe_calories" name="recipe_calories" minlength="1" maxlength="5"
-                     type="text" pattern="^[0-9]{1,5}$" class="validate" required>
+                     type="number" min="0" class="validate" required>
                     <label for="recipe_calories">Calories</label>
                 </div>    
                 <!-- Recipe protein field -->
                 <div class="input-field col s6">
                     <!-- User limited to inputting numbers only -->
                     <input id="recipe_protein" name="recipe_protein" minlength="1" maxlength="3"
-                     type="text" pattern="^[0-9]{1,3}$" class="validate" required>
+                     type="number" min="0" class="validate" required>
                     <label for="recipe_protein">Protein</label>
                 </div>
             </div>
@@ -81,14 +81,14 @@
                 <div class="input-field col s6">
                     <!-- User limited to inputting numbers only -->
                     <input id="recipe_carbohydrate" name="recipe_carbohydrate" minlength="1" maxlength="3"
-                     type="text" pattern="^[0-9]{1,3}$" class="validate" required>
+                     type="number" min="0" class="validate" required>
                     <label for="recipe_carbohydrate">Carbohydrate</label>
                 </div>
             <!-- Recipe fat field -->
                 <div class="input-field col s6">
                     <!-- User limited to inputting numbers only -->
                     <input id="recipe_fat" name="recipe_fat" minlength="1" maxlength="3"
-                     type="text" pattern="^[0-9]{1,3}$" class="validate" required>
+                     type="number" min="0" class="validate" required>
                     <label for="recipe_fat">Fat</label>
                 </div>
             </div>
