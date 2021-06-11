@@ -108,6 +108,9 @@ Features consistent across all the different pages of my project include:
 5. **Flash messages**
     * All flash messages are the same in style, font size and colour. They are all full-screen width and located at the top of the page the user is on. The test is centered and large to be easy to read. The colour is a deep orange to fit the colour theme and attract the user's attention.
 
+6. **Interactive features**
+    * When the user hovers over a button, link or Javascript element such as the navbar tabs, buttons, logo, collapsible accordion, social media link icons or image carousel; then the mouse cursor changes from an arrow to a pointed finger cursor to provide a visual indication to the user that they can click on this item and to encourgae them to click it.
+
 Features on the seperate pages include:
 1. **Home Page**
     * Includes a carousel of 5 images which all promote the website owner's whey protein product that they are trying to get the website user to purchase. It shows the whey protein being enjoyed by people and being used in recipes. These images are relevant to the purpose of the website and will appeal to the intended website users.
@@ -220,6 +223,7 @@ To make a copy of my project to your GitHub account, you can fork a copy of my p
 * The website is for a fictional online cookbook, the content is fictional and was created by myself.
 * I used this [post](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom) to get the comment to resolve the JSHint warnings cause by esversion: 6.
 * I used this [post](https://stackoverflow.com/questions/31575496/prevent-negative-inputs-in-form-input-type-number) to get the min="0" class for ensuring only positive numbers could be added for my numeric form input fields on the add recipe and edit recipe forms.
+* I used this [Code Institute Slack thread](https://code-institute-room.slack.com/archives/C7JQY2RHC/p1612694378461500), specifically the code template provided by user Pauld0051 to get the template code that I could modify to get my recipes page to display in reverse order, so that they newest added recipe was displayed at the top of the list.
 * Photos used were from [Wheybox's Instagram page](https://www.instagram.com/whey_box/), a link to each for each image is provided below under Media. 
 
 ### Acknowledgements ###

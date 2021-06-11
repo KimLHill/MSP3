@@ -103,13 +103,57 @@ I corrected these errors and the PEP8 test passed.
 
 However, even splitting the line onto a seperate line, the password was still too long to be PEP8 compliant. I therefore chose to not edit my code as this password is needed to access the MONGO_URI.
 
+## **Manual Testing of features**
+The following manual tests were carried out on Microsoft Edge, Google Chrome and Mozilla Firefox:
+* Social media links were clicked on to make sure that they open in a new tab at the correct corresponding landing page.
+* Navbar items were clicked on from each page to make sure that they navigate to the correct page.
+* All buttons and links were clicked on to check that they take the user to the correct page.
+* Clicking on the Whey Too Tasty logo in the navbar returns the user back to the home page.
+* Checked the mouse cursor changed from an arrow to a pointed finger when the user could click/swipe on an item like buttons, links, image carousel, collapsible accordian etc.
+
+### **Testing the image carousel**
+* I tested to makesure the user could see the outline of other images to prompt them to click/swipe to see the full carousel. I then made sure that they could click/swipe to rotate through the 5 images.
+
+
+![image carousel](https://user-images.githubusercontent.com/74603013/121683992-04e66a00-cab6-11eb-9e69-00be80fa8a60.png)
+
+### **Testing the collapsible accordian**
+* I first checked that the header of the collapsible contained the recipe name, recipe description, 'is easy' utensils icon (if this had been turned on when adding the recipe) and the dropdown arrow with background styling.
+
+![accordian headers](https://user-images.githubusercontent.com/74603013/121685005-54796580-cab7-11eb-97ad-6651a4eba9b3.png)
+
+* I then checked that the that the tool tip reading: "quick & easy recipe" was displayed when the user hovered over the utensils icon on recipes with this displayed.
+
+![tooltip](https://user-images.githubusercontent.com/74603013/121685258-9e624b80-cab7-11eb-98b4-26f7cc6d3a2e.png)
+
+* I then checked that the collapsible expanded to display the rest of the recipe information when the relevant recipe header was clicked on. I also made sure that this information was displayed with the correct formatting as planned, for example with spaces between the paragraphs and bold text for the ingredients and method.
+
+![expanded collapsible](https://user-images.githubusercontent.com/74603013/121685575-0153e280-cab8-11eb-92f1-770d199b8b0c.png)
+
+### **Testing the search bar functionality**
+* I first checked that the search bar was displaying as intended with the orange search icon, placeholder 'search recipes' text and a green 'reset' button and orange 'search' button.
+
+![search bar](https://user-images.githubusercontent.com/74603013/121685914-6dcee180-cab8-11eb-948d-41c6bac7784d.png)
+
+* I then performed a search for 'smoothie', by typing 'smoothie' into the search bar and clicking the 'search' button and checking that only recipes containing the word smoothie in the name or description were displayed to the user.
+
+![smoothie search](https://user-images.githubusercontent.com/74603013/121686154-bab2b800-cab8-11eb-88a2-894c83ad7892.png)
+
+* I then clicked the reset button to test that I was returned to the recipes page and that all the recipes were displayed.
+
+![reset search](https://user-images.githubusercontent.com/74603013/121686327-ecc41a00-cab8-11eb-8529-5606c1775ce9.png)
+
+
+
+
+
 ### **Testing Compatibility With Browsers**
-I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, responsiveness and design worked as planned.
+I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, carousel, collapsible accordion, responsiveness and design worked as planned.
 
 ### **Testing Compatibility With Different Devices**
-I manually tested the website on a mobile and desktop device. I sent the link for my deployed website to family, who also checked the website on their devices. The website worked for the variety of mobile and desktop devices tested. I didn't have access to a tablet device, so I tested this via the 'Inspect accessibility properties' option when right-clicking on the website and choosing the ipad view.
+I manually tested the website on a mobile and desktop device. I sent the link for my deployed website to family, who also checked the website on their devices. The website worked for the variety of mobile and desktop devices tested.  I checked that the different grid layouts for the different screen sizes worked as expected and that the logo size, padding and navbar toggle worked as expected. I didn't have access to a tablet device, so I tested this via the 'Inspect accessibility properties' option when right-clicking on the website and choosing the ipad view.
 
-## **Bugs Found In Testing**
+## **Problems Resolved During Testing**
 * On the profile page, the image cards were different heights and two of the headings were more than one line length. 
 
 ![uneven image card lengths](https://user-images.githubusercontent.com/74603013/121676720-e16af180-caac-11eb-993c-3f1995600b36.png)
@@ -122,7 +166,15 @@ I fixed the different height problem by adding the class of 'large' to all three
 
 ![text to numeric add recipe change](https://user-images.githubusercontent.com/74603013/121678444-1aa46100-caaf-11eb-88ba-de0b3e7bcb1d.png)
 
-However, this created another problem in that these form fields could then allow (even encourage) the user to enter a negative value which is clearly incorrect and undesirable. I then added the class of min="0" to makesure that the validation only allowed positive numbers to be entered. I used this [post](https://stackoverflow.com/questions/31575496/prevent-negative-inputs-in-form-input-type-number) to get understand that the min class was required for allowing only positive values.
+However, this created another problem in that these form fields could then allow (even encourage) the user to enter a negative value which is clearly incorrect and undesirable. I then added the class of min="0" to makesure that the validation only allowed positive numbers to be entered. I used this [post](https://stackoverflow.com/questions/31575496/prevent-negative-inputs-in-form-input-type-number) to understand that the min class was required for allowing only positive values.
+
+* When my project was deployed live on Heroku, I noticed the internet tab still read 'Task Manager' from having followed the Code Institute tutorials to create my base template. I changed the title on the base.html to read Whey Too Tasty to reflect the website. 
+
+![tab](https://user-images.githubusercontent.com/74603013/121682830-79b8a480-cab4-11eb-9f45-0aaed6534f08.png)
+
+* Whilst it was not a problem as such, when a user added a recipe it would be displayed at the bottom of the recipe page. This meant that the user had to scroll to the bottom of the recipe list or use the search functionality to get to their newly added recipe. This could have become a problem once there were lots of recipes in the database. To resolve this problem I added a sort function in my Python code to display the recipes in reverse order, so that the last recipe added was displayed as the first recipe on the recipes page. I used this [Code Institute Slack thread](https://code-institute-room.slack.com/archives/C7JQY2RHC/p1612694378461500) for advice on how to achieve this.
+
+
 
 
 

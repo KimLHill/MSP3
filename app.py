@@ -29,7 +29,8 @@ def index():
 @app.route("/recipes")
 # find recipes from MongoDB database and render to recipes template
 def recipes():
-    recipes = list(mongo.db.recipes.find())
+    # display last added recipe first
+    recipes = list(mongo.db.recipes.find().sort("_id", -1))
     return render_template("recipes.html", recipes=recipes)
 
 
