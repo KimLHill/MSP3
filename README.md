@@ -91,7 +91,13 @@ Before I started coding my project, I created wireframes using Balsamiq. I creat
 **Wireframes for desktop devices**
 ![Desktop device wireframes](https://user-images.githubusercontent.com/74603013/121753910-3fc6bd00-cb0b-11eb-929a-c0268fc7e03e.png)
 
+### **Database structure**
+I started my project by getting my data structure in place first.
+* The data for this project is stored in my MongoDB database within three collections as follows:
 
+    1. Categories - this stores the recipe category options of Drink, Meal or Snack.
+    2. Recipes - when a recipe is added by the user, it is stored in this collection along with the information about the recipe collected from the add recipe or edit recipe form.
+    3. Users - when a new user registers an account, it is stored in this collection along with their username and their password that is securely stored via a hashing method.
 
 ### **Features**
 Features consistent across all the different pages of my project include:
@@ -196,6 +202,39 @@ Features on the seperate pages include:
 
 ### **Testing**
 The testing that I undertook on my project is detailed in the [testing.md](testing.md) file. 
+
+### **Deploying my project**
+
+ I created my project using Gitpod and deployed my project using the Heroku app hosting platform.
+
+* To deploy my wesbite I completed the following steps:
+
+    1. Typed "pip3 freeze --local > requirements.txt" into the command terminal on my Gitpod workspace.
+    2. Typed "echo web: python app.py > Procfile" into the command terminal on my Gitpod workspace.
+    3. Opened the requirements.txt file to check all my dependencies were listed.
+    4. Opened the Procfile and removed the blank space at the bottom of the file.
+    5. Opened Heroku.
+    6. Signed into my account.
+    7. Created a new app with a unique name that had not already been taken (this project uses 'whey-too-tasty'). 
+    8. I then selected the region closest to me: 'Europe'.
+    9. Clicked the 'Create app' button.
+    10. I opened the 'Settings' tab.
+    11. Clicked the 'Reveal Config Variables' button.
+    12. I then inputted the Config Vars name and associated value/password for the following:
+        * IP
+        * MONGO_DBNAME
+        * MONGO_URI
+        * PORT
+        * SECRET_KEY
+    13. Clicked the 'Deploy' tab.
+    14. Selected the 'Connect to Github' button next to 'Deployment method'.
+    15. Ensured my GitHub profile was displayed and then selected my GitHub repository for the project (this project is called KimLHill/MSP3).
+    16. Then clicked the 'Connect' button.
+    17. Back on Gitpod, I committed the requirements.txt and Procfiles.
+    18. I then did a Git push to push them to GitHub.
+    19. Back on Heroku, I clicked the 'Enable Automatic Deployment' button.
+    20. Clicked 'Deploy Branch'.
+    21. Finally, I clicked on the 'View' button to view my deployed project.
 
 ### **Using My Project**
 
