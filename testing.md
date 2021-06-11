@@ -298,6 +298,22 @@ However, this created another problem in that these form fields could then allow
 
 * Whilst it was not a problem as such, when a user added a recipe it would be displayed at the bottom of the recipe page. This meant that the user had to scroll to the bottom of the recipe list or use the search functionality to get to their newly added recipe. This could have become a problem once there were lots of recipes in the database. To resolve this problem I added a sort function in my Python code to display the recipes in reverse order, so that the last recipe added was displayed as the first recipe on the recipes page. I used this [Code Institute Slack thread](https://code-institute-room.slack.com/archives/C7JQY2RHC/p1612694378461500) for advice on how to achieve this.
 
+## **Testing with Google Chrome Lighthouse**
+I generated a Lighthouse report for each of my pages to analyse the web page's performance and get tips for improving the user experience.
+
+
+![Lighthouse Report Home](https://user-images.githubusercontent.com/74603013/121755214-879b1380-cb0e-11eb-99bc-433fa343fa13.png)
+![Lighthouse Report Recipes](https://user-images.githubusercontent.com/74603013/121755223-8f5ab800-cb0e-11eb-8b69-ea40534e33ef.png)
+![Lighthouse Report profile](https://user-images.githubusercontent.com/74603013/121755230-941f6c00-cb0e-11eb-9c5f-0396ad8d1fbf.png)
+![Lighthouse Report add recipe](https://user-images.githubusercontent.com/74603013/121755235-971a5c80-cb0e-11eb-9515-6b892718fc6b.png)
+![Lighthouse Report Login](https://user-images.githubusercontent.com/74603013/121755246-9c77a700-cb0e-11eb-862d-4d960a571ba6.png)
+![Lighthouse Report register](https://user-images.githubusercontent.com/74603013/121755250-9eda0100-cb0e-11eb-949d-14bad5c65405.png)
+
+The Lighthouse reports highlighted some areas that could be improved, these were:
+* The performance on the home page and profile page were amber. The detail of the report advised to: "Avoid enormous network payloads" this was due to the very large size of the images in the carousel on the home page and the image cards on the profile page. These were also slowing my page loading speeds. If this was a real website then this would need to be addressed before launching the website. In the future I could perhaps try a way to compress the images before adding them into my code.
+* The accessibility for the profile and add recipe pages could be improved. The advised that: "background and foreground colours don't have a sufficient contrast ratio". For the profile page this is because the images in the image cards don't contrast enough with the white background. To overcome this issue in the future I could try adding a border to the image card or adding a contrasting background colour behind the image cards. For the add recipe page, this was because the form blended into the white background. Again to overcome this issue in the future I could add a border to the form, change the form colour or add a background colour behind the form.
+* 
+
 
 
 

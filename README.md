@@ -80,15 +80,18 @@ Having created the user stories so that I knew who I was designing my website fo
 
 
 ### **Wireframes**
-Before I started coding my project, I created wireframes using Balsamiq. I created wireframes for mobile, tablet and desktop devices to decide the layout at different screen sizes. I also used the user stories to add more detail to the website to provide a better user experience. A pdf copy of my wireframes can be found under wireframes in the assets folder or accessed here 
+Before I started coding my project, I created wireframes using Balsamiq. I created wireframes for mobile, tablet and desktop devices to decide the layout at different screen sizes. I also used the user stories to add more detail to the website to provide a better user experience. A pdf copy of my wireframes can be found under wireframes in the assets folder or acce
 
 **Wireframes for mobile devices**
-
+![Mobile device wireframes](https://user-images.githubusercontent.com/74603013/121753697-d646ae80-cb0a-11eb-9986-40260ea9bcff.png)
 
 **Wireframes for tablet devices**
-
+![Tablet device wireframes](https://user-images.githubusercontent.com/74603013/121753991-65ec5d00-cb0b-11eb-9f21-d67f14cf56ae.png)
 
 **Wireframes for desktop devices**
+![Desktop device wireframes](https://user-images.githubusercontent.com/74603013/121753910-3fc6bd00-cb0b-11eb-929a-c0268fc7e03e.png)
+
+
 
 ### **Features**
 Features consistent across all the different pages of my project include:
@@ -179,7 +182,7 @@ Features on the seperate pages include:
 * [Coolors](https://coolors.co/616163-17bebb-fafaff-db995a-ff9f1c) to create a professional looking colour palette for my website.
 * [Balsamiq](https://balsamiq.com/) used to create my wireframes.
 * Jinja - templating language for some of my Python code denoted by {% %}.
-* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, modal, tooltip template and form templates.
+* [Materialize](https://materializecss.com/getting-started.html) for the main and mobile navbars, sticky footer, collapsible accordian, carousel, modal, tooltip template, form templates, card templates and grid layout.
 * [Canva](https://www.canva.com/) used to create the image for the add a recipe image card on the profile page.
 * [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) used to check the validity of my html code for all .html pages.
 * [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/#validate_by_input) used to check the validity of my css code for style.css file.
