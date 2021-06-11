@@ -179,6 +179,16 @@ Features on the seperate pages include:
 
 ### **Future Scope**
 
+I think that there is a lot of potential to further develop this app, which is unfortunately beyond the scope and time frame of this Milestone Project with The Code Institute. In the future, I would like to implement the following features:
+
+* Recipe photos to be added to the collapsible to improve the visual appeal of the website, aid the user's website expereince and improve their understanding of the recipe.
+* Add the ability for users to rate/review the recipes and add these customer reviews to the collapsible for each recipe.
+* Add more interactive features such as video demonstrations of making the recipes. This would then open the website up to more users such as those who can't read, are blind or that cannot undertsand the English language but that could watch or listen to a video.
+* Add the ability for a user to delete their account if they wanted to.
+* Add the ability for a user to reset their password.
+* Add the user's own recipes onto their profile page.
+* Integrate the user's profile to the whey protein shop so that they can see information such as their whey protein order history and the ability to quickly re-order.
+
 ### Technologies Used ###
 * HTML5 used for the .html pages
 * CSS used to style the html pages.
@@ -272,6 +282,8 @@ To make a copy of my project to your GitHub account, you can fork a copy of my p
 
 ### Acknowledgements ###
 * My Code Institute mentor Seun Owonikoko whose feedback throughout the project influenced my website design, content and features.
+* The Code Institute tutorial videos, especially from the 'Mini project | Putting it all together' section in the 'Backend Development' module.
+* My family and friends who tested my website on their devices and provided feedback to improve my website.
 
 ### Media ###
 The images used on my wireframes and website are from:
