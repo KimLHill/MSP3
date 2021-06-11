@@ -241,11 +241,35 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 ![cant change recipes](https://user-images.githubusercontent.com/74603013/121701765-26048600-cac9-11eb-9fe5-8da88f0afd46.png)
 
 ### **Testing the register functionality**
-* 
+* Firstly I checked my MongoDB users database which showed that I had 7 registered users in the database.
 
+![7 users](https://user-images.githubusercontent.com/74603013/121702452-cbb7f500-cac9-11eb-883b-c06acf4a6ff4.png)
 
+* On the register page, I tried to submit the register form without filling in a username or password. Then I tried to only complete one field but not both fields and again tried to register. As expected, I couldn't register a new suer and the fields were highlighted red to show the user that this information were required fields.
 
+![register no fields completed](https://user-images.githubusercontent.com/74603013/121703258-8e079c00-caca-11eb-82ec-c2a124c71198.png)
 
+* I then confirmed that if I didn't use a password that met the password requirements (between 8-15 characters) that I couldn't register and the user was alerted to the problem
+
+![register password error](https://user-images.githubusercontent.com/74603013/121704924-1cc8e880-cacc-11eb-8518-7b045c55496d.png)
+
+* I then added a valid username and password and clicked the 'register' button to confirm that I was taken to the profile page, that the successful registration flash message displayed with the correct message and the profile display matched the username that I had signed in with (George). 
+
+![register george](https://user-images.githubusercontent.com/74603013/121705716-d627be00-cacc-11eb-9622-134bd268f7b1.png)
+![flash message registered](https://user-images.githubusercontent.com/74603013/121705719-d7f18180-cacc-11eb-8675-feea4b866d50.png)
+
+* Finally I confirmed in my MongoDB users database that there were now 8 registered users and that George was showing in the database. I could also confirm that the password displayed in the database was using the secure hashed passwords instead of the password inputted by the user.
+
+![users database](https://user-images.githubusercontent.com/74603013/121706202-4d5d5200-cacd-11eb-8a4d-a4d4cbbeb636.png)
+
+### **Testing the login functionality**
+* Having logged out from the previous test, I tried to login as kimle but using an incorrect password, then clicked the 'login' button. This confirmed that I couldn't login and that a flash message displayed telling the user that an incorrect either username or password had been submitted so that the user didn't know which was correct or incorrect for added security.
+
+![flash message login error](https://user-images.githubusercontent.com/74603013/121706767-d8d6e300-cacd-11eb-834b-797169122538.png)
+
+* I then tried again with the correct username and password and confirmed that I was taken to the profile page, that the flash mesage displayed correctly welcoming the correct user and that the profile page header also displayed the correct username for the user I was logged in as (kimle).
+
+![welcome flash message](https://user-images.githubusercontent.com/74603013/121707195-3c611080-cace-11eb-83a9-64fa4e376d26.png)
 
 ### **Testing Compatibility With Browsers**
 I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, carousel, collapsible accordion, responsiveness and design worked as planned.
