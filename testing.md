@@ -311,8 +311,10 @@ I generated a Lighthouse report for each of my pages to analyse the web page's p
 
 The Lighthouse reports highlighted some areas that could be improved, these were:
 * The performance on the home page and profile page were amber. The detail of the report advised to: "Avoid enormous network payloads" this was due to the very large size of the images in the carousel on the home page and the image cards on the profile page. These were also slowing my page loading speeds. If this was a real website then this would need to be addressed before launching the website. In the future I could perhaps try a way to compress the images before adding them into my code.
-* The accessibility for the profile and add recipe pages could be improved. The advised that: "background and foreground colours don't have a sufficient contrast ratio". For the profile page this is because the images in the image cards don't contrast enough with the white background. To overcome this issue in the future I could try adding a border to the image card or adding a contrasting background colour behind the image cards. For the add recipe page, this was because the form blended into the white background. Again to overcome this issue in the future I could add a border to the form, change the form colour or add a background colour behind the form.
-* 
+* The accessibility for the profile and add recipe pages could be improved. The report advised that: "background and foreground colours don't have a sufficient contrast ratio". For the profile page this is because the images in the image cards don't contrast enough with the white background. To overcome this issue in the future I could try adding a border to the image card or adding a contrasting background colour behind the image cards. For the add recipe page, this was because the form blended into the white background. Again to overcome this issue in the future I could add a border to the form, change the form colour or add a background colour behind the form.
+* The best practices for the profile and add recipe pages could be improved. The report advised that: "links to cross-origin destinations are unsafe". In the future I could research how to improve the safety of my links to improve the best practices rating.
+
+
 
 
 
