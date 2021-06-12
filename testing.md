@@ -3,25 +3,25 @@
 ## **User Stories**
 I tested the user stories based on the users outlined in the User Stories section of my README.md file.
 
-1. **User 1** - I am the owner of the website, I want to promote the user of my protein powder supplement in recipes, to sell more of my product.
+1. **User 1** - I am the owner of the website, I want to promote the use of my protein powder supplement in recipes, to sell more of my product.
 
-	This user promotes their protein powder supplement in several ways. Firstly, on the home page when the user arrives at the website, the first thing they see if a carousel displaying a selection of images that clearly show and promote this user’s product. At the bottom of every page is a header asking website users “Do you need whey protein?” and a button below that provides a quick and easy link to this user’s shop selling where customers can buy the protein powder.
+	This user promotes their protein powder supplement in several ways. Firstly, on the home page when the user arrives at the website, the first thing they see is a carousel displaying a selection of images that clearly show and promote this user’s product. At the bottom of every page is a header asking website users “Do you need whey protein?” and a button below the header which provides a quick and easy link to this user’s shop where customers can buy the protein powder.
 
 2. **User 2** - I am a dietician wanting to share my healthy, nutritionally-balanced recipes with other people.
 
-	This user can achieve their goal by firstly creating an account via the registration page and then selecting the ‘Add recipe’ tab where they will find the form to upload their own recipes. The form includes method, ingredients as well as calories and macronutrient (protein, carbohydrate and fat) information to show that the recipes are nutritionally-balanced. By clicking the ‘Add recipe’ button, this user shares their recipe with other people to achieve their goal.
+	This user can achieve their goal by firstly creating an account via the registration page and then selecting the ‘Add recipe’ navbar tab or 'Add recipe' button on their profile page, where they will find the form to upload their own recipes. The form includes method, ingredients as well as calories and macronutrient (protein, carbohydrate and fat) information to show that the recipes are nutritionally-balanced. By clicking the ‘Add recipe’ button, this user shares their recipe with other people to achieve their goal.
 
 3. **User 3** - I am new to cooking, I want to find healthy recipes with simple, easy cooking instructions, so I can learn to cook my own meals.
 
-	This user can achieve their goal by selecting the ‘Recipes’ tab on the navbar or clicking the ‘Find recipes’ button on the home page, which will take them to the recipes page. This user can then search for recipes by name or description. To easily identify simple and easy recipes, the utensils icon provides quick visual feedback that it is an easy recipe. A tooltip stating “Quick & easy recipe” further helps this user to identify simple recipes suitable for them as a new cook.
+	This user can achieve their goal by selecting the ‘Recipes’ tab on the navbar, clicking the ‘Find recipes’ button on the home page or clicking the ‘Find a recipe’ button on their profile page (if logged in), which will take them to the recipes page. This user can then search for recipes by name or description. To easily identify simple and easy recipes, the utensils icon provides quick visual feedback that it is an easy recipe. A tooltip stating “Quick & easy recipe” further helps this user to identify simple recipes suitable for them as a new cook.
 
 4. **User 4** - I am a bodybuilder, I want to find recipes, to cook meals that fit my calorie and macronutrient needs.
 
-	This user can find recipes via selecting the ‘Recipes’ tab on the navbar or clicking the ‘Find recipes’ button on the home page, which will take them to the recipes page. This user can then click on a recipe (which they are prompted to do by the dropdown arrow symbol) which displays further information on the recipe, including the calorie and macronutrient (protein, carbohydrate & fat) information that this user wants.
+	This user can find recipes via selecting the ‘Recipes’ tab on the navbar, clicking the ‘Find recipes’ button on the home page or clicking the ‘Find a recipe’ button on their profile page (if logged in), which will take them to the recipes page. This user can then click on a recipe (which they are prompted to do by the dropdown arrow symbol) which displays further information on the recipe, including the calorie and macronutrient (protein, carbohydrate & fat) information that this user wants.
 
 5. **User 5** - I am a user who has submitted a recipe, I have since improved my recipe and want to update the recipe to improve it.
 
-	This user can achieve their goal by firstly logging in to their account, which takes them to their profile page.  This user can then click the ‘Recipes’ button in their profile page or the ‘Recipes’ tab on the navbar. On the recipes page, this user will see a ‘Delete’ and an ‘Edit’ button next to the recipes that they have added. This user can select the ‘Edit’ button and make their desired changes. They can then either press the ‘Cancel’ button to discard their changes or click the ‘Edit recipe’ button to make their changes.
+	This user can achieve their goal by firstly logging in to their account, which takes them to their profile page. This user can then click the ‘Find a recipe’ button in their profile page or the ‘Recipes’ tab on the navbar. On the recipes page, this user will see a ‘Delete’ and an ‘Edit’ button next to the recipes that they have added. This user can select the ‘Edit’ button and make their desired changes. They can then either press the ‘Cancel’ button to discard their changes or click the ‘Edit recipe’ button to make their changes.
 
 ## **HTML Validation**
 I passed all my html code through the [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input).
@@ -44,23 +44,23 @@ On all .html pages except for the base.html page I had errors relating to the la
 
 
 1. **base.html**
-	* I was shown a warning of: "unclosed element div". This related to a missing </div> tag in the footer that I added to fix this error.
-	* I was shown another warning of: "unclosed element div" and in the same section of code an error of: "stray end tag nav" and an error of: "end tag seen, but there were open elements". When I checked my code, I had put the closing </nav> and </div> in the incorrect positions and order. I corrected this code and the errors were fixed.
+	* I was shown a warning of: "unclosed element div". This related to a missing div tag in the footer that I added to fix this error.
+	* I was shown another warning of: "unclosed element div" and in the same section of code an error of: "stray end tag nav" and an error of: "end tag seen, but there were open elements". When I checked my code, I had put the closing nav and div tags in the incorrect positions and order. I corrected this code and the errors were fixed.
 
 2. **index.html**
 	* I was shown errors of: "An img element must have an alt attribute, except under certain conditions." for all my carousel images as I had forgotten to add an alt tag. I corrected these errors by adding alt tags to describe each of my carousel images.
 
 3. **add_recipe.html**
-	* I was shown errors of: "No space between attributes." These related to the sttributes in my form input fields. I added the necessary space between these attributes and this resolved these errors.
-	* I was shown an error of: Attribute pattern not allowed on element textarea at this point. This related to my calories field where I had tried to restrict the user input to only numeric values. This error was caused because I had used a textinput that didn't support the pattern attribute. I changed this to an input instead of text area and this corrected the issue. I also manually tested this by trying to enter letters into the form and a red error was displayed. I then updated the recipe protein, carbohydrate and fat fields to an input text also, and applied the password attribute to reestrict these fields to numeric values only as well.
+	* I was shown errors of: "No space between attributes." These related to the attributes in my form input fields. I added the necessary space between these attributes and this resolved these errors.
+	* I was shown an error of: "Attribute pattern not allowed on element textarea at this point." This related to my calories field where I had tried to restrict the user input to only numeric values. This error was caused because I had used a textinput that didn't support the pattern attribute. I changed this to an input instead of text area and this corrected the issue. I also manually tested this by trying to enter letters into the form and a red error was displayed. I then updated the recipe protein, carbohydrate and fat fields to an input text also.
 	* I also had errors of: "Text not allowed in element select in this context." This error related to the use of Jinja templating and is needed to display the recipe category options for the user to select from. I therefore chose to keep the code the same and these errors still exist.
 
 	![select error](https://user-images.githubusercontent.com/74603013/121500693-73ec9180-c9d6-11eb-9a16-b20681953a90.png)
 
 4. **edit_recipe.html**
-	* I was shown errors of: "No space between attributes." These related to the sttributes in my form input fields. I added the necessary space between these attributes and this resolved these errors.
+	* I was shown errors of: "No space between attributes." These related to the attributes in my form input fields. I added the necessary space between these attributes and this resolved these errors.
 	* I also had errors of: "Text not allowed in element select in this context." This error related to the use of Jinja templating and is needed to display the recipe category options for the user to select from. I therefore chose to keep the code the same and these errors still exist.
-	* I also had errors relating to: "label element with multiple labelable descendants" and "Duplicate ID is_easy" this was because I have two options for the is_easy, depending on whether or not the is_easy toggle was on or off in the original recipe in the database. As only one of these options will be correct, this will not be a problem. I proved this by deleting on of the options from the code in the validator and then re-running the checks and the errors were gone. However, as this option is needed, I have left my code and so the errors still exist.
+	* I also had errors relating to: "label element with multiple labelable descendants" and "Duplicate ID is_easy" this was because I have two options for the is_easy, depending on whether or not the is_easy toggle was on or off in the original recipe in the database. As only one of these options will be correct, this will not be a problem. I proved this by deleting one of the options from the code in the validator and then re-running the checks and the errors were gone. However, as this option is needed, I have left my code and so the errors still exist.
 
 	![is_easy error](https://user-images.githubusercontent.com/74603013/121505159-8072e900-c9da-11eb-863e-6947a1ebe452.png)
 
@@ -81,8 +81,8 @@ I passed my css code from style.css through the [W3C CSS Validation Service](htt
 
 ## **Javascript Validation**
 I passed my javascript code from script.js through [JSHint](https://jshint.com/).
-	 * There were no errors, but I was shown two warnings:
-        1. Both warnings related to 'Eversion 6'. I researched this and found this [post](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom) giving this comment /*jshint esversion: 6 */ to add to the top of the javascript code to reswolve the warnings. I added this comment at the top of my js code and the warnings disappeared.
+* There were no errors, but I was shown two warnings:
+	1. Both warnings related to 'Eversion 6'. I researched this and found this [post](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom) giving this comment /*jshint esversion: 6 */ to add to the top of the javascript code to resolve the warnings. I added this comment at the top of my js code and the warnings disappeared.
 
 ## **PEP8 Validation**
 I passed my Python code from app.py and env.py through [PEP8 Online](http://pep8online.com/).
@@ -157,7 +157,7 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 
 ![edit my recipes](https://user-images.githubusercontent.com/74603013/121690210-770e7d00-cabd-11eb-954a-fff530856608.png)
 
-* I then clicked on the edit button to ensure that I was taken to the 'Edit recipe' form. I also checked that this form was displaying as intended with the category selection menu, had retrieved the information from the original recipe and was displaying these correctly in each form input field, had ornage coloured icons next to the full wdith form fields and a clickable 'edit recipe' button or cancel button both with icons.
+* I then clicked on the edit button to ensure that I was taken to the 'Edit recipe' form. I also checked that this form was displaying as intended with the category selection menu, had retrieved the information from the original recipe and was displaying these correctly in each form input field, had orange coloured icons next to the full width form fields and a clickable 'edit recipe' button or cancel button both with icons.
 
 ![edit recipe form](https://user-images.githubusercontent.com/74603013/121690579-eedca780-cabd-11eb-92cd-b3d71efbada9.png)
 
@@ -174,21 +174,21 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 
 ![flash edited message](https://user-images.githubusercontent.com/74603013/121692280-dd949a80-cabf-11eb-904e-21a5dfb857e9.png)
 
-* I then navigated to the recipes page and confirmed that the edited 'nectarine & seed museli' recipe could be seen and that it had replaced the old 'fav drink' recipe. I thene xpanded the collapsible to ensure the full edited recipe details were displayed and correct.
+* I then navigated to the recipes page and confirmed that the edited 'nectarine & seed museli' recipe could be seen and that it had replaced the old 'fav drink' recipe. I then expanded the collapsible to ensure the full edited recipe details were displayed and correct.
 
 ![muesli recipe](https://user-images.githubusercontent.com/74603013/121692581-20567280-cac0-11eb-8c0e-f3b323bd4157.png)
 
 ### **Testing the delete recipe functionality**
-* I clicked the red 'delete' button next to the recipe I wanted to delete. I confirmede that a modal appeared and displayed the correct information, warning the user that they were about to delete the recipe and providing two button options 'no, save recipe' and 'yes, delete recipe'. This proved the defensive programming functionality was working to prevent a one-click accidental deletion of a recipe by a user. I also checked the colours of the buttons were correct - green to save the recipe, red warning colour for the delete recipe button.
+* I clicked the red 'delete' button next to the recipe I wanted to delete. I confirmed that a modal appeared and displayed the correct information, warning the user that they were about to delete the recipe and providing two button options 'no, save recipe' and 'yes, delete recipe'. This proved the defensive programming functionality was working to prevent a one-click accidental deletion of a recipe by a user. I also checked the colours of the buttons were correct - green to save the recipe, red warning colour for the delete recipe button.
 
-![delete modal](https://user-images.githubusercontent.com/74603013/121693004-9b1f8d80-cac0-11eb-8931-982f7ab12dae.png)
+![modal for delete button](https://user-images.githubusercontent.com/74603013/121767383-c43b2f00-cb4f-11eb-86f3-c81ede9af1d2.png)
 
 * I clicked on the 'no, save recipe' button and confirmed that I was returned to the recipes page and that I could still see my recipe in the list.
 * Before deleting a recipe from the database, I first checked my MongoDB account which showed that there were 12 recipes in the recipes database.
 
 ![12 recipes](https://user-images.githubusercontent.com/74603013/121695689-33b70d00-cac3-11eb-9051-48267fe9f002.png)
 
-* I then re-clicked the 'delete' button next to the recipe I wanted to delete on the recipes page and this time clicked the 'yes, delete recipe' button on the modal. I then confirmed that I was taken back to the recipes page, that the flash message was displayed with the correct message and that I could only see 11 not 12 reckipes in the database with the correct recipe having been removed from the list.
+* I then re-clicked the 'delete' button next to the recipe I wanted to delete on the recipes page and this time clicked the 'yes, delete recipe' button on the modal. I then confirmed that I was taken back to the recipes page, that the flash message was displayed with the correct message and that I could only see 11 not 12 recipes in the database with the correct recipe having been removed from the list.
 
 ![deleted flash message](https://user-images.githubusercontent.com/74603013/121696962-7e855480-cac4-11eb-82ae-856bf4e24b1b.png)
 
@@ -205,11 +205,11 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 
 ![choose category error](https://user-images.githubusercontent.com/74603013/121698085-93aeb300-cac5-11eb-8cd4-1d40e2699219.png)
 
-* I madesure that the category dropdown displayed the correct information, that any empty fields were displayed red, that the numeric only inputs only allowed positive numbers, that toggle switch could be changed to on or off and that I couldn't add my recipe with the 'add recipe' button if all the fields weren't completed.
+* I madesure that the category dropdown displayed the correct information, that any empty fields were displayed red, that the numeric only inputs only allowed positive numbers, that the toggle switch could be changed to on or off and that I couldn't add my recipe with the 'add recipe' button if all the fields weren't completed.
 
 ![incorrect form inputs](https://user-images.githubusercontent.com/74603013/121698712-2d766000-cac6-11eb-8aad-55589e124344.png)
 
-* I then correctly completed the form and clciked the 'add recipe' button. I confirmed that I was taken to the recipes page, that a flash message confirming to the user that the recipe had been added and that I could see my newly added recipe as the first recipe in the list. I also confirmed that I had the option to 'edit' or 'delete' my newly added recipe.
+* I then correctly completed the form and clicked the 'add recipe' button. I confirmed that I was taken to the recipes page, that a flash message confirming to the user that the recipe had been added and that I could see my newly added recipe as the first recipe in the list. I also confirmed that I had the option to 'edit' or 'delete' my newly added recipe.
 
 ![added recipe flash message](https://user-images.githubusercontent.com/74603013/121699613-02404080-cac7-11eb-91aa-08209a2ad7bd.png)
 
@@ -227,7 +227,7 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 ![12 recipes displayed](https://user-images.githubusercontent.com/74603013/121700674-0d47a080-cac8-11eb-8f25-b5c4ab2b5959.png)
 
 ### **Testing the profile page**
-* I navigated to the profile page and made sure that the correct username profile message was shown for the user I was signed in as (kimle), that I could see all the image card correctly and that all the image card buttons took me to the correct link or form as expected.
+* I navigated to the profile page and made sure that the correct username profile message was shown for the user I was signed in as (kimle), that I could see all the image cards correctly and that all the image card buttons took me to the correct link or form as expected.
 
 ![profile page](https://user-images.githubusercontent.com/74603013/121700870-39632180-cac8-11eb-9dc4-ab9848ca010c.png)
 
@@ -245,7 +245,7 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 
 ![7 users](https://user-images.githubusercontent.com/74603013/121702452-cbb7f500-cac9-11eb-883b-c06acf4a6ff4.png)
 
-* On the register page, I tried to submit the register form without filling in a username or password. Then I tried to only complete one field but not both fields and again tried to register. As expected, I couldn't register a new suer and the fields were highlighted red to show the user that this information were required fields.
+* On the register page, I tried to submit the register form without filling in a username or password. Then I tried to only complete one field but not both fields and again tried to register. As expected, I couldn't register a new user and the fields were highlighted red to show the user that this information were required fields.
 
 ![register no fields completed](https://user-images.githubusercontent.com/74603013/121703258-8e079c00-caca-11eb-82ec-c2a124c71198.png)
 
@@ -272,9 +272,9 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 ![welcome flash message](https://user-images.githubusercontent.com/74603013/121707195-3c611080-cace-11eb-83a9-64fa4e376d26.png)
 
 ### **Testing Compatibility With Browsers**
-I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, carousel, collapsible accordion, responsiveness and design worked as planned. the only minor differences found were:
+I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, carousel, collapsible accordion, responsiveness and design worked as planned. The only minor differences found were:
 * The required code worked on all browsers but the appearance of the prompt messages such as: "please fill in this field" had a slightly different appearance in each browser.
-* The appearance of the login and register form was slightly different on Microsfot Edge. The functionlaity was still the same, as was the main styling, but there was a light blue background to the form input fields and the text was smaller, which may be less user-friendly for some users.
+* The appearance of the login and register form was slightly different on Microsfot Edge. The functionality was still the same, as was the main styling, but there was a light blue background to the form input fields and the text was smaller, which may be less user-friendly for some users.
 
 ![register microsoft edge](https://user-images.githubusercontent.com/74603013/121758978-93d99d80-cb1b-11eb-83b7-1578830926bb.png)
 
@@ -296,7 +296,9 @@ I fixed the different height problem by adding the class of 'large' to all three
 
 However, this created another problem in that these form fields could then allow (even encourage) the user to enter a negative value which is clearly incorrect and undesirable. I then added the class of min="0" to makesure that the validation only allowed positive numbers to be entered. I used this [post](https://stackoverflow.com/questions/31575496/prevent-negative-inputs-in-form-input-type-number) to understand that the min class was required for allowing only positive values.
 
-* When my project was deployed live on Heroku, I noticed the internet tab still read 'Task Manager' from having followed the Code Institute tutorials to create my base template. I changed the title on the base.html to read Whey Too Tasty to reflect the website. 
+When I re-ran this code through the html validator, this caused new errors for: "Attribute maxlength is only allowed when the input type is email, password, search, tel, text, or url." and "Attribute minlength is only allowed when the input type is email, password, search, tel, text, or url." This was because I had changed from a text input to an input (as explained above in the html validation add recipe.html section). I removed the attributes of 'minlength' and 'maxlength' and used 'max="1000" to limit the number of characters that could be inputted. I made the changes to both the add_recipe and edit_recipe pages, re-ran my code through the validator and the errors had been resolved.
+
+* When my project was deployed live on Heroku, I noticed the internet tab still read "Task Manager" from having followed the Code Institute tutorials to create my base template. I changed the title on the base.html to read "Whey Too Tasty" to reflect the website. 
 
 ![tab](https://user-images.githubusercontent.com/74603013/121682830-79b8a480-cab4-11eb-9f45-0aaed6534f08.png)
 
@@ -323,8 +325,8 @@ The following points were found during testing that need to be rectified in the 
 * the points identified in the Lighthouse reports as described in the section above.
 * change the buttons on a very small screen size to improve the user experience as they curently sit on top of each other on very small devices.
 * Add a dynamic method of adding the ingredients for better visual presentation when viewed on the website and to make editing the recipe easier for the user.
-* On some browsers there was a red error line when selecting the recipe category even though the code validation passed to along the recipe to still be edited via successful submission through the 'edit recipe' button.
-* add an additional password checker when a new user registers their account to confirm that it is the password they had intended to type in through a second password verification process.
+* On some browsers there was a red error line when selecting the recipe category even though the code validation passed to allow the recipe to still be edited via successful submission through the 'edit recipe' button. So, although the code still works and the functionality still works as intended, there is a bug that needs to be fixed.
+* Add an additional password checker when a new user registers their account to confirm that it is the password they had intended to type in through a second password verification process.
 * The features as listed in the 'Future Scope' section of the README.md file.
 
 

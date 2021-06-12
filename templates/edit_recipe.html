@@ -82,18 +82,18 @@
                 <div class="input-field col s6">
                     <!-- Get current recipe calories from database-->
                     <!-- User limited to inputting numbers only -->
-                    <input id="recipe_calories" name="recipe_calories" minlength="1" 
-                    maxlength="5" value="{{ recipe.recipe_calories }}" type="number" 
-                    min="0" class="validate" required>
+                    <input id="recipe_calories" name="recipe_calories" 
+                    value="{{ recipe.recipe_calories }}" type="number" 
+                    min="0" max="1000" class="validate" required>
                     <label for="recipe_calories">Calories</label>
                 </div>
             <!-- Recipe protein field -->
             <div class="input-field col s6">
                     <!-- Get current recipe protein from database-->
                     <!-- User limited to inputting numbers only -->
-                    <input id="recipe_protein" name="recipe_protein" minlength="1" 
-                    maxlength="3" value="{{ recipe.recipe_protein }}" type="number" 
-                    min="0" class="validate" required>
+                    <input id="recipe_protein" name="recipe_protein" 
+                    value="{{ recipe.recipe_protein }}" type="number" 
+                    min="0" max="1000" class="validate" required>
                     <label for="recipe_protein">Protein</label>
                 </div>
             </div>
@@ -102,18 +102,18 @@
                 <div class="input-field col s6">
                     <!-- Get current recipe carbohydrate from database-->
                     <!-- User limited to inputting numbers only -->
-                    <input id="recipe_carbohydrate" name="recipe_carbohydrate" minlength="1" 
-                    maxlength="3" value="{{ recipe.recipe_carbohydrate }}" type="number" 
-                    min="0" class="validate" required>
+                    <input id="recipe_carbohydrate" name="recipe_carbohydrate" 
+                    value="{{ recipe.recipe_carbohydrate }}" type="number" 
+                    min="0" max="1000" class="validate" required>
                     <label for="recipe_carbohydrate">Carbohydrate</label>
                 </div>
             <!-- Recipe fat field -->
             <div class="input-field col s6">
                     <!-- Get current recipe fat from database-->
                     <!-- User limited to inputting numbers only -->
-                    <input id="recipe_fat" name="recipe_fat" minlength="1" 
-                    maxlength="3" value="{{ recipe.recipe_fat }}" type="number" 
-                    min="0" class="validate" required>
+                    <input id="recipe_fat" name="recipe_fat" 
+                    value="{{ recipe.recipe_fat }}" type="number" 
+                    min="0" max="1000" class="validate" required>
                     <label for="recipe_fat">Fat</label>
                 </div>
             </div>
