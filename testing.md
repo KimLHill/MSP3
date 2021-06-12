@@ -272,7 +272,11 @@ The following manual tests were carried out on Microsoft Edge, Google Chrome and
 ![welcome flash message](https://user-images.githubusercontent.com/74603013/121707195-3c611080-cace-11eb-83a9-64fa4e376d26.png)
 
 ### **Testing Compatibility With Browsers**
-I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, carousel, collapsible accordion, responsiveness and design worked as planned.
+I manually tested the website on Microsoft Edge, Google Chrome and Mozilla Firefox browsers. I checked that buttons, links, the form inputs, carousel, collapsible accordion, responsiveness and design worked as planned. the only minor differences found were:
+* The required code worked on all browsers but the appearance of the prompt messages such as: "please fill in this field" had a slightly different appearance in each browser.
+* The appearance of the login and register form was slightly different on Microsfot Edge. The functionlaity was still the same, as was the main styling, but there was a light blue background to the form input fields and the text was smaller, which may be less user-friendly for some users.
+
+![register microsoft edge](https://user-images.githubusercontent.com/74603013/121758978-93d99d80-cb1b-11eb-83b7-1578830926bb.png)
 
 ### **Testing Compatibility With Different Devices**
 I manually tested the website on a mobile and desktop device. I sent the link for my deployed website to family, who also checked the website on their devices. The website worked for the variety of mobile and desktop devices tested.  I checked that the different grid layouts for the different screen sizes worked as expected and that the logo size, padding and navbar toggle worked as expected. I didn't have access to a tablet device, so I tested this via the 'Inspect accessibility properties' option when right-clicking on the website and choosing the ipad view.
