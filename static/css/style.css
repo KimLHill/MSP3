@@ -1,8 +1,9 @@
+/* Apply text-shadow custom styling */
 .text-shadow{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* flash messages custom styling */
+/* Flash messages custom styling */
 .flashes h4{
     line-height: 2;
     color: #fafaff;
