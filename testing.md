@@ -314,7 +314,14 @@ The Lighthouse reports highlighted some areas that could be improved, these were
 * The accessibility for the profile and add recipe pages could be improved. The report advised that: "background and foreground colours don't have a sufficient contrast ratio". For the profile page this is because the images in the image cards don't contrast enough with the white background. To overcome this issue in the future I could try adding a border to the image card or adding a contrasting background colour behind the image cards. For the add recipe page, this was because the form blended into the white background. Again to overcome this issue in the future I could add a border to the form, change the form colour or add a background colour behind the form.
 * The best practices for the profile and add recipe pages could be improved. The report advised that: "links to cross-origin destinations are unsafe". In the future I could research how to improve the safety of my links to improve the best practices rating.
 
-
+## **Features Still To Implement**
+The following points were found during testing that need to be rectified in the future to make the website work better for all users:
+* the points identified in the Lighthouse reports as described in the section above.
+* change the buttons on a very small screen size to improve the user experience as they curently sit on top of each other on very small devices.
+* Add a dynamic method of adding the ingredients for better visual presentation when viewed on the website and to make editing the recipe easier for the user.
+* On some browsers there was a red error line when selecting the recipe category even though the code validation passed to along the recipe to still be edited via successful submission through the 'edit recipe' button.
+* add an additional password checker when a new user registers their account to confirm that it is the password they had intended to type in through a second password verification process.
+* The features as listed in the 'Future Scope' section of the README.md file.
 
 
 

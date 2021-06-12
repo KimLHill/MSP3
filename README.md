@@ -40,7 +40,6 @@ Having created the user stories so that I knew who I was designing my website fo
         * User demographic – the website is open to members of all ages who are likely to have a large variation in cooking ability, nutrition requirements, dietary preferences, food budget, cooking equipment etc.  The website branding therefore needs to appeal visually to all ages and genders. It must also be able to navigated easily as the users could have a wide range of computer competency levels.
     * I researched current recipe websites (specifically allrecipes (http://allrecipes.co.uk/) and BBC Good Food (https://www.bbcgoodfood.com/)) to gather information on what these websites offer their users; the pros and cons that I liked as a user of their website and to identify the features and information they provided. This gave me ideas of how to address my user’s needs but also how I could further improve my user’s experience to add value to the Whey Too Tasty website.
 
-
 2.	**Scope Plane:**
     * When addressing the scope plane, I focused on what features were to be included on the website and its key functionality to meet the user’s needs. I also needed to combine these with Javascript as per the requirements for my Code Institute MSP3. I kept in mind the question of: Why would a user want this?
 	    * Requirements: ability to find high-protein recipes, ability to create, upload, edit and delete high-protein recipes; ability to share high-protein recipes with others; ability for user’s to buy the website owner’s protein powder.
@@ -176,6 +175,10 @@ Features on the seperate pages include:
 * Added a tooltip to the utensils icon on the collapsible accordian which reads: "quick & easy recipe" to aid the user's understanding of the meaning of this symbol.
 * Added a modal that confirms with the user that they really did mean to delete the recipe upon clicking the delete button. This acts as defensive programming to prevent the user accidentally removing the recipe. To delete the recipe, the user now has to confirm on the modal that they do wish to delete, but they also have the option to cancel and keep the recipe if the first click was unintentional.
 * Made the Whey Too Tasty logo smaller to fit better on smaller screen sizes, then added a media query to make the logo bigger on tablet and desktop devices to improve the user experience.
+* Changed the colour of the text, navbar, footer and collapsible to fit with the Coolors palette to make the website more visually appealing. 
+* Changed the colour of some of the buttons to give greater meaning to the user in accordance with conventions the user would be use to e.g. green is good/safe and red is a warning colour.
+* Changed the edit recipe form so that it preloaded the form fields with the information from the current recipe being edited, to improve the user experience by making the editing process quicker and simpler.
+* Added flash messages to provide useful feedback to the user e.g. confirming successful registration or incorrect password and/or username.
 
 ### **Future Scope**
 
@@ -209,6 +212,11 @@ I think that there is a lot of potential to further develop this app, which is u
 * [Google Chrom Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) used to generate Lighthouse reports on the performance of all my web pages once the project was deployed.
 * [Heroku](https://www.heroku.com/what) to deploy my website live.
 * [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=bing&utm_campaign=mdb_bs_emea_united_kingdom_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204562&msclkid=9d365b5212331e600c093b9174dbb54f) to create my database used in this project.
+* [Pymongo](https://pymongo.readthedocs.io/en/stable/index.html) for getting my MongoDB database to work with my Python code.
+* Flash Python microframework used to help write the Python code for this project.
+* [Gitpod](https://www.gitpod.io/) to write my project code.
+* [GitHub](https://github.com/) remote repository where my porject is stored.
+* [Font Awesome](https://fontawesome.com/) for the icons used throughout the website.
 
 ### **Testing**
 The testing that I undertook on my project is detailed in the [testing.md](testing.md) file. 
@@ -294,5 +302,5 @@ The images used on my wireframes and website are from:
 * [Carousel five](https://www.instagram.com/p/ByuKPdcgCwY/?utm_source=ig_web_copy_link)
 * [Shop whey protein image card](https://www.instagram.com/p/BycFMvxlKKj/?utm_source=ig_web_copy_link)
 * [Find a recipe image card](https://www.instagram.com/p/CBGFdhgHSNo/?utm_source=ig_web_copy_link)
-[Tablet outline](https://image.freepik.com/free-icon/computer-tablet_318-40639.jpg) used for creating my tablet wireframes.
+* [Tablet outline](https://image.freepik.com/free-icon/computer-tablet_318-40639.jpg) used for creating my tablet wireframes.
 * Add a recipe image card was created myself using Canva.
